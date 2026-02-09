@@ -43,11 +43,6 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <img 
-            src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/OKg6qhkFdz9kD72oDSPBZ8_1770653036118_na1fn_c3luZGljYS1sb2dv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L09LZzZxaGtGZHo5a0Q3Mm9EU1BCWjhfMTc3MDY1MzAzNjExOF9uYTFmbl9jM2x1WkdsallTMXNiMmR2LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IvOLbMcUjFhVpQqj4JSuJKZ6TsoWr1-1sjbcIAPsUrXuQPdtlF7LthnqrnNDz7SgJci3dZv-hgLNfDWNcRvAIXqURSsT3j-PI1GUmLaK~UMthRQgz98TBiiAUro21ll7TBxekL5pA9rdz0hy5px31Uuw3ircA3f6abjmx2OLpsUi9d7MaGiA1NDzNeIalZpcuZVKoKCn0W-o7QTm8Atz9GiKTj-YR-8jVC58rE3JKjBU--XNZgnLDz~3q1jtrqJ8vNFuYpxG6jVY5nvDiOdjhfXLc3Wy1oaLHVwXOrs47PkWU0WGMgB9aMnte~YRZ2TsuRSGiLILnTzalsRxPbaCeA__"
-            alt="Syndica Concierge Care Logo"
-            className="h-24 w-auto mb-8 drop-shadow-2xl"
-          />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
             Syndica Concierge Care
           </h1>
