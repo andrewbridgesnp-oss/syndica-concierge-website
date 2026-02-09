@@ -5,11 +5,12 @@
  * - Pink neon glow effects on interactive elements
  * - Outfit font for headings (geometric, tech-forward)
  * - Full-bleed sections with asymmetric layouts
+ * - NO EMOJIS - hyper-realistic medical imagery only
  */
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Video, Syringe, Sparkles, Users, MapPin, Shield, Clock, Star } from "lucide-react";
+import { Phone, Video, Syringe, Sparkles, Users, MapPin, Shield, Clock, Activity } from "lucide-react";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
               <a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
             </div>
             <Button className="neon-glow-hover bg-primary hover:bg-primary/90 text-primary-foreground">
-              Book Appointment
+              Schedule Visit
             </Button>
           </div>
         </div>
@@ -47,15 +48,15 @@ export default function Home() {
             {/* Left: Content */}
             <div className="space-y-8">
               <div className="inline-block px-4 py-2 rounded-full glass-card border border-primary/30">
-                <span className="text-sm text-primary font-medium">South Carolina's Premier Telehealth Provider</span>
+                <span className="text-sm text-primary font-medium">Bridging Gaps in Your Healthcare</span>
               </div>
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                Healthcare
+                When You
                 <br />
-                <span className="text-primary">On Your Terms</span>
+                <span className="text-primary">Can't Wait</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                Professional telehealth and concierge care services throughout South Carolina. Personalized healthcare delivered with cutting-edge technology and genuine compassion.
+                Professional healthcare services for when you need care now, not in five weeks. Complementing your primary care physician with timely access to treatment, procedures, and specialized services throughout South Carolina.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="neon-glow-hover bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
@@ -67,20 +68,10 @@ export default function Home() {
                   Call Now
                 </Button>
               </div>
-              <div className="flex items-center gap-6 pt-4">
-                <div className="flex -space-x-2">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 border-2 border-background"></div>
-                  <div className="w-10 h-10 rounded-full bg-primary/30 border-2 border-background"></div>
-                  <div className="w-10 h-10 rounded-full bg-primary/40 border-2 border-background"></div>
-                </div>
-                <div>
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                    ))}
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-1">5.0 rating from patients</p>
-                </div>
+              <div className="pt-4 glass-card border border-border/50 rounded-2xl p-6">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  <span className="text-primary font-semibold">Important:</span> Syndica Concierge Care provides complementary healthcare services and is not intended to replace your primary care physician. We work collaboratively to bridge gaps in healthcare access.
+                </p>
               </div>
             </div>
 
@@ -101,79 +92,117 @@ export default function Home() {
       <section id="services" className="py-20 px-6 bg-card/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Our Services</h2>
+            <h2 className="text-5xl font-bold mb-4">Gap-Bridging Healthcare</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive healthcare solutions tailored to your lifestyle
+              Timely access to care when your schedule and health needs don't align with traditional appointment availability
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Telehealth */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Urgent Care Access */}
             <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
-                  <Video className="w-8 h-8 text-primary" />
+                  <Activity className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Telehealth</h3>
+                <h3 className="text-2xl font-bold">Urgent Care Access</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Virtual consultations for most conditions throughout South Carolina. Accessible healthcare from the comfort of your home.
+                  When you can't wait weeks for an appointment. Sinus infections, UTIs, minor acute illnesses treated promptly.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Primary care consultations</li>
-                  <li>• Follow-up appointments</li>
-                  <li>• Prescription management</li>
-                  <li>• No DEA-controlled substances</li>
+                  <li>• Acute illness treatment</li>
+                  <li>• Same-day or next-day availability</li>
+                  <li>• Antibiotic prescriptions</li>
+                  <li>• Not emergency care (call 911 for emergencies)</li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Weight Loss */}
+            {/* Injections & Procedures */}
             <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
                   <Syringe className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Weight Loss</h3>
+                <h3 className="text-2xl font-bold">Injections & Procedures</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Evidence-based weight loss injection therapy with comprehensive support and monitoring.
+                  Specialized procedures without the specialist wait time. Professional treatment for pain management and therapeutic needs.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• GLP-1 medications</li>
-                  <li>• Personalized treatment plans</li>
-                  <li>• Ongoing monitoring</li>
-                  <li>• Lifestyle coaching</li>
+                  <li>• Joint injections</li>
+                  <li>• Trigger point injections</li>
+                  <li>• Weight loss injections (GLP-1)</li>
+                  <li>• In-home or clinic setting</li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Aesthetics */}
+            {/* Medication Management */}
+            <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
+              <CardContent className="p-8 space-y-4">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
+                  <Shield className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold">Medication Management</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Prescription refills and new medications when you need them, without disrupting your established care relationships.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Common medication refills</li>
+                  <li>• ED medication prescriptions</li>
+                  <li>• Acute condition prescriptions</li>
+                  <li>• No DEA-controlled substances</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Telehealth Consultations */}
+            <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
+              <CardContent className="p-8 space-y-4">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
+                  <Video className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold">Telehealth Consultations</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Virtual visits throughout South Carolina. Convenient access to professional healthcare from your home or office.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Statewide virtual consultations</li>
+                  <li>• Aesthetic consultations</li>
+                  <li>• Follow-up appointments</li>
+                  <li>• Georgia license coming soon</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Aesthetic Services */}
             <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
                   <Sparkles className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Aesthetics</h3>
+                <h3 className="text-2xl font-bold">Aesthetic Treatments</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Professional aesthetic services to help you look and feel your best with medical-grade treatments.
+                  Medical-grade aesthetic services with professional expertise. Look and feel your best with evidence-based treatments.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Injectable treatments</li>
+                  <li>• Injectable aesthetic treatments</li>
                   <li>• Skin rejuvenation</li>
-                  <li>• Personalized consultations</li>
+                  <li>• Personalized treatment plans</li>
                   <li>• Medical-grade products</li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Concierge Care */}
+            {/* Concierge Home Visits */}
             <Card className="glass-card border-border/50 hover:border-primary/50 transition-all duration-500 group">
               <CardContent className="p-8 space-y-4">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:neon-glow transition-all duration-500">
                   <Users className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">Concierge Care</h3>
+                <h3 className="text-2xl font-bold">Concierge Home Visits</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  In-person care in Aiken County. We travel to you for parties of 3 or more for ultimate convenience.
+                  In-person care in Aiken County. We come to you for parties of 3 or more, bringing professional healthcare to your location.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Home visits (3+ patients)</li>
@@ -207,35 +236,28 @@ export default function Home() {
                 <span className="text-sm text-primary font-medium">Meet Your Provider</span>
               </div>
               <h2 className="text-5xl font-bold">Andrew Bridges, NP</h2>
-              <div className="flex items-center gap-2">
-                <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <span className="text-muted-foreground">5.0 Patient Rating</span>
-              </div>
+              <p className="text-lg text-primary font-semibold">Board-Certified Nurse Practitioner</p>
               
               <div className="prose prose-invert max-w-none space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Andrew Bridges is a board-certified Nurse Practitioner dedicated to providing comprehensive, patient-centered healthcare to the communities of South Carolina. With extensive experience in primary care and specialized training in orthopedics and urology, Andrew brings a unique blend of clinical expertise and genuine compassion to every patient interaction.
+                  Andrew Bridges is a board-certified Nurse Practitioner dedicated to bridging gaps in healthcare access throughout South Carolina. With extensive experience in primary care and specialized training in orthopedics and urology, Andrew brings a unique blend of clinical expertise and genuine compassion to every patient interaction.
                 </p>
                 <p>
-                  Throughout his career, Andrew has built a reputation for taking the time to truly listen to his patients, thoroughly explaining conditions and treatment options, and providing consistent follow-up care. His patients consistently praise his bedside manner, noting that "he's amazing" and "I highly recommend him."
+                  Throughout his career, Andrew has built a reputation for taking the time to truly listen to his patients, thoroughly explaining conditions and treatment options, and providing consistent follow-up care. His clinical background spans multiple specialties, with a strong foundation in primary care complemented by focused experience in orthopedics—a specialty he particularly loves—and urology.
                 </p>
                 <p>
-                  Andrew's clinical background spans multiple specialties, with a strong foundation in primary care complemented by focused experience in orthopedics—a specialty he particularly loves—and urology. This diverse expertise allows him to provide comprehensive care for a wide range of conditions.
+                  Andrew's approach emphasizes collaboration with your existing healthcare team. Syndica Concierge Care is designed to complement your primary care physician by providing timely access to care when you need it most, specialized procedures, and convenient telehealth services throughout South Carolina.
                 </p>
               </div>
 
               <div className="grid grid-cols-3 gap-4 pt-4">
                 <Card className="glass-card border-border/50 p-4 text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">5.0</div>
-                  <div className="text-xs text-muted-foreground">Patient Rating</div>
+                  <div className="text-3xl font-bold text-primary mb-1">SC</div>
+                  <div className="text-xs text-muted-foreground">Licensed</div>
                 </Card>
                 <Card className="glass-card border-border/50 p-4 text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">SC</div>
-                  <div className="text-xs text-muted-foreground">Licensed State</div>
+                  <div className="text-3xl font-bold text-primary mb-1">NP</div>
+                  <div className="text-xs text-muted-foreground">Board Certified</div>
                 </Card>
                 <Card className="glass-card border-border/50 p-4 text-center">
                   <div className="text-3xl font-bold text-primary mb-1">GA</div>
@@ -254,7 +276,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-5xl font-bold">Serving South Carolina</h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Bringing quality healthcare to your community with flexible service options designed for your convenience.
+                Flexible service delivery designed for your convenience, whether you prefer in-person home visits or virtual telehealth consultations.
               </p>
               
               <div className="space-y-4">
@@ -266,7 +288,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Aiken County Concierge</h3>
                       <p className="text-muted-foreground">
-                        In-person care throughout Aiken County. We travel to you for parties of 3 or more.
+                        In-person care throughout Aiken County. We travel to your home for parties of 3 or more, providing professional healthcare in the comfort of your own space.
                       </p>
                     </div>
                   </div>
@@ -280,7 +302,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-xl font-bold mb-2">Statewide Telehealth</h3>
                       <p className="text-muted-foreground">
-                        Virtual consultations available to all South Carolina residents. Georgia license coming soon.
+                        Virtual consultations available to all South Carolina residents. Convenient access to professional healthcare from anywhere in the state. Georgia license coming soon.
                       </p>
                     </div>
                   </div>
@@ -379,7 +401,7 @@ export default function Home() {
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold mb-4">Get In Touch</h2>
               <p className="text-xl text-muted-foreground">
-                Ready to experience personalized healthcare? Contact us today.
+                Ready to bridge the gap in your healthcare? Contact us today.
               </p>
             </div>
 
@@ -424,7 +446,7 @@ export default function Home() {
             <Card className="glass-card border-primary/30 p-8 mt-8 text-center">
               <h3 className="text-2xl font-bold mb-4">Ready to Start?</h3>
               <p className="text-muted-foreground mb-6">
-                Book your telehealth consultation or schedule a concierge visit today
+                Schedule your telehealth consultation or request a concierge home visit today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="neon-glow-hover bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -433,7 +455,7 @@ export default function Home() {
                 </Button>
                 <Button size="lg" variant="outline" className="glass-card border-border/50 hover:border-primary/50">
                   <Users className="mr-2 h-5 w-5" />
-                  Request Concierge Visit
+                  Request Home Visit
                 </Button>
               </div>
             </Card>
@@ -456,17 +478,17 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                Professional telehealth and concierge care services in South Carolina.
+                Bridging gaps in healthcare access throughout South Carolina.
               </p>
             </div>
 
             <div>
               <h4 className="font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#services" className="hover:text-primary transition-colors">Urgent Care Access</a></li>
+                <li><a href="#services" className="hover:text-primary transition-colors">Injections & Procedures</a></li>
                 <li><a href="#services" className="hover:text-primary transition-colors">Telehealth</a></li>
-                <li><a href="#services" className="hover:text-primary transition-colors">Weight Loss</a></li>
                 <li><a href="#services" className="hover:text-primary transition-colors">Aesthetics</a></li>
-                <li><a href="#services" className="hover:text-primary transition-colors">Concierge Care</a></li>
               </ul>
             </div>
 
