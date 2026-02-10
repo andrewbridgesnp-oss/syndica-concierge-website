@@ -142,10 +142,47 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Resting Bliss Face - Signature Service */}
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  alt="Andrew Bridges, NP - Aesthetic Injectable Specialist"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Resting Bliss Face</h3>
+              <p className="text-muted-foreground mb-6">
+                Our signature full-face aesthetic treatment. Achieve that serene, blissful expression that radiates confidence and tranquility.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Comprehensive facial rejuvenation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Strategic injectable placement</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Natural, refreshed appearance</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Personalized treatment protocol</span>
+                </li>
+              </ul>
+            </Card>
+
             {/* Urgent Care */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <Clock className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  alt="Andrew Bridges, NP - Urgent Care Specialist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Urgent Care Access</h3>
               <p className="text-muted-foreground mb-6">
@@ -172,9 +209,13 @@ export default function Home() {
             </Card>
 
             {/* Injections & Procedures */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <Syringe className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  alt="Andrew Bridges, NP - Injection Specialist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Injections & Procedures</h3>
               <p className="text-muted-foreground mb-6">
@@ -201,9 +242,13 @@ export default function Home() {
             </Card>
 
             {/* Telehealth */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <Video className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  alt="Andrew Bridges, NP - Telehealth Provider"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Telehealth Consultations</h3>
               <p className="text-muted-foreground mb-6">
@@ -230,9 +275,13 @@ export default function Home() {
             </Card>
 
             {/* Weight Loss */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <Heart className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  alt="Andrew Bridges, NP - Weight Loss Specialist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Weight Loss Programs</h3>
               <p className="text-muted-foreground mb-6">
@@ -259,9 +308,13 @@ export default function Home() {
             </Card>
 
             {/* Aesthetics */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <Sparkles className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  alt="Andrew Bridges, NP - Aesthetic Medicine Specialist"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Aesthetic Treatments</h3>
               <p className="text-muted-foreground mb-6">
@@ -288,9 +341,13 @@ export default function Home() {
             </Card>
 
             {/* Concierge Home Visits */}
-            <Card className="luxury-card group">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:pink-glow transition-all">
-                <HomeIcon className="h-6 w-6 text-primary" />
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  alt="Andrew Bridges, NP - Concierge Care Provider"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-2xl mb-4">Concierge Home Visits</h3>
               <p className="text-muted-foreground mb-6">
