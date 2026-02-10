@@ -44,11 +44,15 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Syndica Bridges the Gaps
-          </h1>
+          <div className="mb-6 -mt-16 overflow-hidden">
+            <h1 className="text-5xl md:text-7xl font-bold text-white flex flex-wrap items-center justify-center gap-x-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="inline-block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Syndica</span>
+              <span className="inline-block animate-slide-in-bottom" style={{ animationDelay: '0.8s' }}>Bridges</span>
+              <span className="inline-block animate-slide-in-right" style={{ animationDelay: '0.2s' }}>the Gaps</span>
+            </h1>
+          </div>
           <p className="text-2xl md:text-3xl text-white/95 mb-2 font-semibold">Between Traditional Healthcare Modalities</p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+          <div className="flex flex-col sm:flex-row gap-4 mt-16">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl" asChild>
               <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
                 <Video className="mr-2 h-6 w-6" />
@@ -467,7 +471,7 @@ export default function Home() {
                     <MapPin className="h-8 w-8 text-primary" />
                   </div>
                   <p className="text-2xl font-bold text-foreground">GA</p>
-                  <p className="text-sm text-muted-foreground">Coming Soon</p>
+                  <p className="text-sm text-muted-foreground">Spring 2026</p>
                 </div>
               </div>
             </div>
@@ -542,6 +546,69 @@ export default function Home() {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
+        </div>
+      </section>
+
+      {/* SimplePractice Platform Section */}
+      <section className="py-24">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6">Powered by SimplePractice</h2>
+            <p className="text-lg text-muted-foreground">
+              Your care is managed through SimplePractice, the industry-leading healthcare platform trusted by thousands of providers
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Shield className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">HIPAA-Compliant Security</h3>
+              <p className="text-muted-foreground">Bank-level encryption and security protocols protect your sensitive health information at all times</p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Video className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Seamless Telehealth</h3>
+              <p className="text-muted-foreground">High-quality video consultations with no downloads required - join from any device with one click</p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Clock className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">24/7 Patient Portal</h3>
+              <p className="text-muted-foreground">Access your health records, treatment plans, and appointment history anytime from your secure portal</p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <CheckCircle2 className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Online Scheduling</h3>
+              <p className="text-muted-foreground">Book, reschedule, or cancel appointments online at your convenience without phone calls</p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Syringe className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Digital Prescriptions</h3>
+              <p className="text-muted-foreground">E-prescriptions sent directly to your preferred pharmacy for faster, more convenient medication pickup</p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                <Phone className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-3">Automated Reminders</h3>
+              <p className="text-muted-foreground">Text and email appointment reminders ensure you never miss a visit or follow-up</p>
+            </Card>
+          </div>
+          <div className="mt-12 text-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg" asChild>
+              <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
+                Access Patient Portal
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
