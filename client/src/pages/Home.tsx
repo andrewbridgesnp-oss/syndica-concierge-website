@@ -230,15 +230,11 @@ export default function Home() {
             {/* Injections & Procedures */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <video 
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/vyfaqFIbFdyHKwPv.png"
+                  alt="Professional Aesthetic Injection Treatment"
                   className="w-full h-full object-cover"
-                >
-                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZVkgvEklVQJMSsOx.mp4" type="video/mp4" />
-                </video>
+                />
               </div>
               <h3 className="text-2xl mb-4">Injections & Procedures</h3>
               <p className="text-muted-foreground mb-6">
