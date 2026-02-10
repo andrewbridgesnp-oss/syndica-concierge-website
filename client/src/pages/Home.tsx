@@ -31,8 +31,8 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Video Hero - Top of Screen */}
+    <div className="min-h-screen">
+      {/* Hero Section with Video Background */}
       <section className="relative w-full h-screen">
         <video 
           autoPlay 
@@ -73,82 +73,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Luxury Navigation */}
-      <nav className="sticky top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/OKg6qhkFdz9kD72oDSPBZ8_1770653036118_na1fn_c3luZGljYS1sb2dv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L09LZzZxaGtGZHo5a0Q3Mm9EU1BCWjhfMTc3MDY1MzAzNjExOF9uYTFmbl9jM2x1WkdsallTMXNiMmR2LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IvOLbMcUjFhVpQqj4JSuJKZ6TsoWr1-1sjbcIAPsUrXuQPdtlF7LthnqrnNDz7SgJci3dZv-hgLNfDWNcRvAIXqURSsT3j-PI1GUmLaK~UMthRQgz98TBiiAUro21ll7TBxekL5pA9rdz0hy5px31Uuw3ircA3f6abjmx2OLpsUi9d7MaGiA1NDzNeIalZpcuZVKoKCn0W-o7QTm8Atz9GiKTj-YR-8jVC58rE3JKjBU--XNZgnLDz~3q1jtrqJ8vNFuYpxG6jVY5nvDiOdjhfXLc3Wy1oaLHVwXOrs47PkWU0WGMgB9aMnte~YRZ2TsuRSGiLILnTzalsRxPbaCeA__"
-                alt="Syndica Concierge Care Logo"
-                className="h-12 w-auto"
-              />
-            </div>
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Services</a>
-              <a href="#about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#insurance" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Insurance</a>
-              <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</a>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6">
-                Schedule Visit
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section - Luxury Medical Excellence */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 luxury-gradient"></div>
-        <div className="container relative z-10">
+      {/* About Section */}
+      <section className="py-24">
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <p className="text-sm font-semibold text-primary">Premium Patient-First Care</p>
-              </div>
-              <h1 className="text-gradient-pink">
-                Restoring Your Time, Remodeling Your Care
+            <div>
+              <h1 className="mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Bridging Gaps in Your Healthcare
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Syndica's Concierge Care restores your time with after-hours availability, direct provider access, and a growing network of specialists. You choose your appointment time, visit length, and desired outcomes—discussed first, not last. With 20-minute buffers between visits, we respect everyone's schedule equally. Extended appointments are available at premium rates to honor every patient's time.
+                Syndica's Concierge Care aims to restore your time. With after-hours availability for members, a direct line to your provider, and more specialists joining each month, we aim to remodel the healthcare experience. You pick your time and day, you pick the length of visit, and your desired outcome is the first thing discussed. There is a 20-minute window between visits for each provider. Patients who elect to go over their chosen time will pay a premium rate by the minute—because we value everyone's time equally.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
-                  <Video className="mr-2 h-5 w-5" />
-                  Schedule Consult via Telehealth
+                  Book Appointment
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-6 text-lg">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
+                <Button size="lg" variant="outline" className="border-2 font-semibold px-8 py-6 text-lg">
+                  Learn More
                 </Button>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-primary/5 border border-primary/20 rounded-lg">
-                <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-foreground">
-                  <strong>Important:</strong> Syndica Concierge Care provides complementary healthcare services and is not intended to replace your primary care physician. We work collaboratively to bridge gaps in healthcare access.
-                </p>
               </div>
             </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-luxury">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Board-Certified Nurse Practitioner"
-                  className="w-full h-auto"
-                />
-              </div>
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-luxury">
+              <img 
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" 
+                alt="Modern medical facility"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section - Luxury Cards */}
+      {/* Services Section */}
       <section id="services" className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">The Perfect Number</h2>
             <p className="text-lg text-muted-foreground">
-              At Syndica, quality trumps quantity. Each provider maintains a carefully limited patient panel—because we believe the patient-provider relationship holds value beyond monetary gain. Provider-led. Patient-led. Outcome-driven.
+              Syndica cares more about you than the numbers. Each provider is capped at a number of members pre-agreed upon. We believe there is value in the patient-provider relationship that exceeds that of monetary gain. Provider-led. Patient-led. Outcome-driven.
             </p>
           </div>
 
@@ -177,15 +139,11 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Strategic injectable placement</span>
+                  <span className="text-sm">Natural, balanced results</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Natural, refreshed appearance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Personalized treatment protocol</span>
+                  <span className="text-sm">Expert injection techniques</span>
                 </li>
               </ul>
             </Card>
@@ -200,25 +158,25 @@ export default function Home() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/zBGpCfrbUIhNlpum.mp4" type="video/mp4" />
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/bBHWoJXPVzgIFYfh.mp4" type="video/mp4" />
                 </video>
               </div>
-              <h3 className="text-2xl mb-4">Telehealth Consultations</h3>
+              <h3 className="text-2xl mb-4">Telehealth</h3>
               <p className="text-muted-foreground mb-6">
-                Virtual visits throughout South Carolina. Convenient access to professional healthcare from your home or office.
+                Virtual consultations from the comfort of your home. Professional care without the commute.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Statewide virtual consultations</span>
+                  <span className="text-sm">Convenient video appointments</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Aesthetic consultations</span>
+                  <span className="text-sm">Same-day availability</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Follow-up appointments</span>
+                  <span className="text-sm">South Carolina licensed (Spring 2026)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -247,38 +205,32 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Trigger point injections</span>
+                  <span className="text-sm">Trigger point therapy</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Weight loss injections (GLP-1)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">In-home or clinic setting</span>
+                  <span className="text-sm">Therapeutic procedures</span>
                 </li>
               </ul>
             </Card>
-
-
 
             {/* Weight Loss */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/Reo3OuBW3Vt6ssIDFcjb2G-img-1_1770733128000_na1fn_c2VydmljZS13ZWlnaHQtbG9zcy1zaG9wcGluZw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L1JlbzNPdUJXM1Z0NnNzSURGY2piMkctaW1nLTFfMTc3MDczMzEyODAwMF9uYTFmbl9jMlZ5ZG1salpTMTNaV2xuYUhRdGJHOXpjeTF6YUc5d2NHbHVady5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=e6V-s65GkgXev5EotR0i8Ld9OQkS6SZYcWvFZm9O3weHSPs7D35uyfwNf5sod8oODCJDU11uftDPxURwLe678vWxFw6ZK20e3jPHYTNHrMGiHP1wJKFpuurlYVsaivQ3GKHQWyohg5ayfb1goJKpOZFhCYlJBhyIDHiLcfNqVzGFM-OBEusNXeH9QV48ifHVbScSYMNAb6OKCWF5Ws4ke~n7AFdYLlHjeKaUYEhKyxiehoBYgc0URIUDRvStRGtGfLPKJZdRpNwdNQgWrsf0Nb4NojMrom4HJJ04lq6~-ce5D0j7dswvcJyb~M6P8b7SVi~NNigkSQMibhQ5k8vHqQ__"
-                  alt="Weight Loss Success - Woman Shopping Smaller Sizes"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZCfYqRCNYlGZLbON.png"
+                  alt="Weight Loss Success"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl mb-4">Weight Loss Programs</h3>
+              <h3 className="text-2xl mb-4">Weight Loss (GLP-1)</h3>
               <p className="text-muted-foreground mb-6">
-                Medical-grade weight loss treatments including GLP-1 medications that ship directly to you. Professional oversight throughout your journey.
+                Medical weight management with proven GLP-1 medications. Sustainable results with professional guidance.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">GLP-1 injections (ships directly)</span>
+                  <span className="text-sm">Semaglutide & Tirzepatide programs</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -286,11 +238,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Ongoing monitoring & support</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Telehealth consultations</span>
+                  <span className="text-sm">Ongoing support & monitoring</span>
                 </li>
               </ul>
             </Card>
@@ -299,19 +247,19 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfpOdaRXuPlbmeiX.jpg"
-                  alt="Andrew Bridges, NP - Men's Health Specialist"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfJqKkJnqYOtTkRk.png"
+                  alt="Men's Health Consultation"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-2xl mb-4">Men's Health</h3>
               <p className="text-muted-foreground mb-6">
-                Discreet, professional men's health services. Erectile dysfunction treatment, testosterone management, and preventive care.
+                Confidential treatment for ED, testosterone optimization, and men's wellness concerns.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">ED medication prescriptions</span>
+                  <span className="text-sm">Erectile dysfunction treatment</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -319,11 +267,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Confidential telehealth consultations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Preventive health screening</span>
+                  <span className="text-sm">Discreet, professional care</span>
                 </li>
               </ul>
             </Card>
@@ -332,27 +276,23 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/jKadmmNLlqNroclT.png"
-                  alt="Andrew Bridges, NP - Concierge Care Provider"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lqCTNXTqKVsZRWzk.png"
+                  alt="Concierge Home Visit"
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="text-2xl mb-4">Concierge Home Visits</h3>
               <p className="text-muted-foreground mb-6">
-                In-person care in Aiken County. We come to you for parties of 3 or more, bringing professional healthcare to your location.
+                Premium in-home healthcare services. We bring the clinic to you for ultimate convenience.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Home visits (3+ patients)</span>
+                  <span className="text-sm">Private in-home consultations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Group wellness events</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Corporate health services</span>
+                  <span className="text-sm">Group services (parties of 3+)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -365,28 +305,28 @@ export default function Home() {
       </section>
 
       {/* Concierge Video Showcase */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-24">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-luxury">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-luxury">
               <video 
-                autoPlay 
-                loop 
-                muted 
+                autoPlay
+                loop
+                muted
                 playsInline
-                className="w-full h-auto"
+                className="w-full h-full object-cover"
               >
-                <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/KADuTeMxltymTloI.mp4" type="video/mp4" />
+                <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/qGGKdWZnxJBLCPDN.mp4" type="video/mp4" />
               </video>
             </div>
-            <div className="space-y-6">
-              <h2 style={{ fontFamily: 'Playfair Display, serif' }}>Premium Concierge Care</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Experience healthcare on your terms with our exclusive concierge services. We bring professional medical care directly to your home in Aiken County, creating a spa-like atmosphere of comfort and luxury.
+            <div>
+              <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Experience Concierge Care</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Syndica brings premium healthcare directly to your home. Whether you're hosting a wellness party or prefer the privacy of in-home consultations, our concierge service delivers the same exceptional care you'd receive in our clinic—in the comfort of your own space.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <HomeIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -395,152 +335,66 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Sparkles className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Luxury Experience</h4>
-                    <p className="text-sm text-muted-foreground">Premium medical care delivered with the elegance of a high-end spa</p>
+                    <h4 className="font-semibold mb-1">Aesthetic Parties</h4>
+                    <p className="text-sm text-muted-foreground">Host a wellness event with friends and receive exclusive group pricing</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Heart className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Group Wellness</h4>
-                    <p className="text-sm text-muted-foreground">Perfect for families, friends, or corporate wellness events</p>
+                    <h4 className="font-semibold mb-1">Personalized Attention</h4>
+                    <p className="text-sm text-muted-foreground">Dedicated time with your provider in a private, relaxed setting</p>
                   </div>
                 </div>
               </div>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
-                Schedule Concierge Visit
-              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-24 bg-muted/30">
+      {/* About Provider Section */}
+      <section className="py-24 bg-muted/30">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-luxury">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-luxury">
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/bhzsFkprQfPBemlG.png"
-                alt="Andrew Bridges, NP - Board-Certified Nurse Practitioner"
-                className="w-full h-auto"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lqCTNXTqKVsZRWzk.png"
+                alt="Andrew Bridges, NP"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="space-y-6">
-              <div>
-                <h2 className="mb-2">Andrew Bridges, NP</h2>
-                <p className="text-xl text-primary font-semibold">Board-Certified Nurse Practitioner</p>
-              </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Andrew Bridges is a board-certified Nurse Practitioner dedicated to bridging gaps in healthcare access throughout South Carolina. With extensive experience in primary care and specialized training in orthopedics and urology, Andrew brings a unique blend of clinical expertise and genuine compassion to every patient interaction.
+            <div>
+              <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Meet Andrew Bridges, NP</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Andrew Bridges is a board-certified Nurse Practitioner dedicated to providing personalized, patient-first healthcare. With extensive experience in aesthetic medicine, men's health, and comprehensive primary care, Andrew founded Syndica to bridge the gaps in traditional healthcare delivery.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Throughout his career, Andrew has built a reputation for taking the time to truly listen to his patients, thoroughly explaining conditions and treatment options, and providing consistent follow-up care. His clinical background spans multiple specialties, with a strong foundation in primary care complemented by focused experience in orthopedics—a specialty he particularly loves—and urology.
+              <p className="text-lg text-muted-foreground mb-8">
+                His philosophy is simple: quality over quantity. By limiting patient panels and prioritizing meaningful provider-patient relationships, Syndica delivers the attentive care you deserve—when you need it, not weeks from now.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Andrew's approach emphasizes collaboration with your existing healthcare team. Syndica Concierge Care is designed to complement your primary care physician by providing timely access to care when you need it most, specialized procedures, and convenient telehealth services throughout South Carolina.
-              </p>
-              <div className="grid grid-cols-3 gap-6 pt-6">
-                <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <MapPin className="h-8 w-8 text-primary" />
+              <div className="grid grid-cols-2 gap-6">
+                <div className="flex items-start gap-3">
+                  <Award className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Board Certified</h4>
+                    <p className="text-sm text-muted-foreground">Licensed Nurse Practitioner</p>
                   </div>
-                  <p className="text-2xl font-bold text-foreground">SC</p>
-                  <p className="text-sm text-muted-foreground">Licensed</p>
                 </div>
-                <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <Award className="h-8 w-8 text-primary" />
+                <div className="flex items-start gap-3">
+                  <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold mb-1">Multi-State Licensed</h4>
+                    <p className="text-sm text-muted-foreground">SC & GA (Spring 2026)</p>
                   </div>
-                  <p className="text-2xl font-bold text-foreground">NP</p>
-                  <p className="text-sm text-muted-foreground">Board Certified</p>
-                </div>
-                <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <MapPin className="h-8 w-8 text-primary" />
-                  </div>
-                  <p className="text-2xl font-bold text-foreground">GA</p>
-                  <p className="text-sm text-muted-foreground">Spring 2026</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-24">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">What Patients Say</h2>
-            <p className="text-lg text-muted-foreground">
-              Real feedback from verified patients who have experienced our gap-bridging care model
-            </p>
-          </div>
-          <Carousel className="max-w-4xl mx-auto">
-            <CarouselContent>
-            <CarouselItem className="md:basis-1/2">
-              <Card className="luxury-card mx-2">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "Andrew talks fast but he truly takes the time to listen. He doesn't rush through appointments and makes sure I understand everything about my treatment plan. It's rare to find a provider who genuinely cares."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Aiken County</p>
-            </Card>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2">
-              <Card className="luxury-card mx-2">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "I've been to many providers over the years, and Andy stands out for his clinical knowledge and attention to detail. He thoroughly explains conditions and treatment options, which I really appreciate."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, South Carolina</p>
-            </Card>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2">
-              <Card className="luxury-card mx-2">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "What I love most is the consistent follow-up care. Andrew checks in to make sure treatments are working and adjusts as needed. It's refreshing to have a provider who's accessible when you need them."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Telehealth</p>
-            </Card>
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2">
-              <Card className="luxury-card mx-2">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "When I couldn't get an appointment with my regular doctor for weeks, Andrew was able to see me quickly for an urgent issue. He worked with my PCP's office to coordinate care. This is exactly what healthcare should be."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Concierge Care</p>
-            </Card>
-            </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
         </div>
       </section>
 
@@ -550,56 +404,80 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Powered by SimplePractice</h2>
             <p className="text-lg text-muted-foreground">
-              Your care is managed through SimplePractice, the industry-leading healthcare platform trusted by thousands of providers
+              Your healthcare experience is streamlined through our secure, HIPAA-compliant patient portal. Everything you need in one place.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Shield className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">HIPAA-Secure Platform</h3>
+                  <p className="text-muted-foreground">Your health information is protected with bank-level encryption and security</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">HIPAA-Compliant Security</h3>
-              <p className="text-muted-foreground">Bank-level encryption and security protocols protect your sensitive health information at all times</p>
             </Card>
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Video className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Video className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Seamless Telehealth</h3>
+                  <p className="text-muted-foreground">High-quality video consultations directly through your patient portal</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Seamless Telehealth</h3>
-              <p className="text-muted-foreground">High-quality video consultations with no downloads required - join from any device with one click</p>
             </Card>
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Clock className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">24/7 Portal Access</h3>
+                  <p className="text-muted-foreground">View records, message your provider, and manage appointments anytime</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">24/7 Patient Portal</h3>
-              <p className="text-muted-foreground">Access your health records, treatment plans, and appointment history anytime from your secure portal</p>
             </Card>
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <CheckCircle2 className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <CheckCircle2 className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Online Scheduling</h3>
+                  <p className="text-muted-foreground">Book, reschedule, or cancel appointments with just a few clicks</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Online Scheduling</h3>
-              <p className="text-muted-foreground">Book, reschedule, or cancel appointments online at your convenience without phone calls</p>
             </Card>
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Syringe className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Syringe className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Digital Prescriptions</h3>
+                  <p className="text-muted-foreground">E-prescriptions sent directly to your preferred pharmacy</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Digital Prescriptions</h3>
-              <p className="text-muted-foreground">E-prescriptions sent directly to your preferred pharmacy for faster, more convenient medication pickup</p>
             </Card>
             <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-primary" />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Automated Reminders</h3>
+                  <p className="text-muted-foreground">Never miss an appointment with text and email notifications</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-3">Automated Reminders</h3>
-              <p className="text-muted-foreground">Text and email appointment reminders ensure you never miss a visit or follow-up</p>
             </Card>
           </div>
-          <div className="mt-12 text-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg" asChild>
-              <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
+          <div className="text-center mt-12">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-10 py-6 text-lg" asChild>
+              <a href="https://app.syndicasolutions.com" target="_blank" rel="noopener noreferrer">
                 Access Patient Portal
               </a>
             </Button>
@@ -611,144 +489,246 @@ export default function Home() {
       <section id="pricing" className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Concierge Membership Tiers</h2>
+            <h2 className="mb-6">Affordable Concierge Membership Tiers</h2>
             <p className="text-lg text-muted-foreground">
-              Choose the membership level that fits your healthcare needs. All tiers include priority scheduling and direct provider access.
+              Quality healthcare shouldn't be out of reach. Choose the membership level that fits your needs and budget.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Essential Tier */}
-            <Card className="luxury-card relative">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Essential</h3>
-                <div className="flex items-baseline justify-center gap-2 mb-4">
-                  <span className="text-5xl font-bold text-primary">$199</span>
-                  <span className="text-muted-foreground">/month</span>
+          
+          {/* Basic Health Tiers */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Basic Health Memberships</h3>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Essential - $29 */}
+              <Card className="luxury-card relative">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Essential</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$29</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Perfect for basic healthcare needs</p>
                 </div>
-                <p className="text-sm text-muted-foreground">Perfect for individuals seeking timely care</p>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Priority scheduling within 48 hours</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Unlimited telehealth consultations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Direct provider messaging</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Standard appointment times (30 min)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Insurance accepted for services</span>
-                </li>
-              </ul>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                Get Started
-              </Button>
-            </Card>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">2 telehealth visits per month (15 min each)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Scheduling within 5 business days</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Portal messaging (48hr response)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Insurance accepted for services</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
 
-            {/* Premium Tier */}
-            <Card className="luxury-card relative border-2 border-primary shadow-luxury">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-semibold">
-                Most Popular
-              </div>
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Premium</h3>
-                <div className="flex items-baseline justify-center gap-2 mb-4">
-                  <span className="text-5xl font-bold text-primary">$399</span>
-                  <span className="text-muted-foreground">/month</span>
+              {/* Premium - $49 */}
+              <Card className="luxury-card relative border-2 border-primary shadow-luxury">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-semibold">
+                  Most Popular
                 </div>
-                <p className="text-sm text-muted-foreground">Comprehensive care with extended access</p>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Same-day or next-day scheduling</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Unlimited telehealth + in-office visits</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">24/7 direct provider access</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Extended appointments (up to 60 min)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">After-hours availability</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Discounted aesthetic procedures (15% off)</span>
-                </li>
-              </ul>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                Get Started
-              </Button>
-            </Card>
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Premium</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$49</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Enhanced care with priority access</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">4 visits per month (telehealth or office, 20 min each)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Priority scheduling within 48 hours</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Direct provider messaging (24hr response)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">After-hours texting (urgent matters)</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
 
-            {/* VIP Tier */}
-            <Card className="luxury-card relative">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>VIP</h3>
-                <div className="flex items-baseline justify-center gap-2 mb-4">
-                  <span className="text-5xl font-bold text-primary">$799</span>
-                  <span className="text-muted-foreground">/month</span>
+              {/* VIP - $99 */}
+              <Card className="luxury-card relative">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>VIP</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Unlimited basic healthcare access</p>
                 </div>
-                <p className="text-sm text-muted-foreground">Ultimate concierge healthcare experience</p>
-              </div>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Immediate scheduling (within hours)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Unlimited visits (telehealth, office, home)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">24/7 concierge support line</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Flexible appointment length (your choice)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Priority home visit scheduling</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Complimentary aesthetic consultations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">VIP aesthetic pricing (25% off all procedures)</span>
-                </li>
-              </ul>
-              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                Get Started
-              </Button>
-            </Card>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Unlimited telehealth & office visits (30 min each)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Same-day or next-day scheduling</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">24/7 direct provider access</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">After-hours availability</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
+            </div>
           </div>
+
+          {/* Health + Aesthetics Tiers */}
+          <div>
+            <h3 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Health + Aesthetics Memberships</h3>
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {/* Essential Plus - $99 */}
+              <Card className="luxury-card relative">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Essential Plus</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Basic health + aesthetic perks</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">All Essential Health benefits</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">15% off all aesthetic procedures</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Complimentary aesthetic consultations</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Priority aesthetic booking</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
+
+              {/* Premium Plus - $299 */}
+              <Card className="luxury-card relative border-2 border-primary shadow-luxury">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-semibold">
+                  Best Value
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Premium Plus</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$299</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Comprehensive care + aesthetic treatments</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">All Premium Health benefits</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">$200 monthly aesthetic credit included</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">25% off additional aesthetic procedures</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Same-day aesthetic appointments</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Extended appointment times (45 min)</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
+
+              {/* VIP Plus - $479 */}
+              <Card className="luxury-card relative">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>VIP Plus</h3>
+                  <div className="flex items-baseline justify-center gap-2 mb-4">
+                    <span className="text-5xl font-bold text-primary">$479</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Ultimate concierge experience</p>
+                </div>
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">All VIP Health benefits (unlimited visits)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">$400 monthly aesthetic credit included</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">30% off all aesthetic procedures</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Priority home visit scheduling</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Flexible appointment length (your choice)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Complimentary quarterly aesthetic treatments</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                  Get Started
+                </Button>
+              </Card>
+            </div>
+          </div>
+
           <div className="mt-12 text-center max-w-2xl mx-auto">
             <p className="text-muted-foreground mb-2">
               All memberships are month-to-month with no long-term contracts. Cancel anytime.
             </p>
             <p className="text-sm text-muted-foreground">
-              Procedures, medications, and specialized services billed separately at member rates.
+              Additional services, procedures, and medications billed separately at member rates. Overtime charges apply at $2/minute beyond scheduled appointment time.
             </p>
           </div>
         </div>
@@ -764,30 +744,185 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {[
-              { name: "Blue Cross Blue Shield", subtitle: "All major plans accepted" },
-              { name: "Medicare", subtitle: "Medicare & Medicare Advantage" },
-              { name: "Medicaid", subtitle: "South Carolina Medicaid" },
-              { name: "Aetna", subtitle: "PPO, HMO, Open Choice" },
-              { name: "UnitedHealthcare", subtitle: "All major plans" },
-              { name: "Humana", subtitle: "PPO, HMO, Medicare" }
-            ].map((insurance, idx) => (
-              <Card key={idx} className="luxury-card text-center">
-                <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-8 w-8 text-primary" />
-                </div>
-                <h4 className="font-bold text-foreground mb-2">{insurance.name}</h4>
-                <p className="text-sm text-muted-foreground">{insurance.subtitle}</p>
-              </Card>
-            ))}
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">Blue Cross Blue Shield</p>
+            </Card>
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">Aetna</p>
+            </Card>
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">Cigna</p>
+            </Card>
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">UnitedHealthcare</p>
+            </Card>
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">Humana</p>
+            </Card>
+            <Card className="luxury-card flex items-center justify-center p-6">
+              <p className="font-semibold text-center">Medicare</p>
+            </Card>
           </div>
-          <div className="mt-12 text-center max-w-2xl mx-auto">
-            <p className="text-muted-foreground mb-2">
-              We also accept Cigna, Tricare, Wellcare, Molina, Ambetter, and many other carriers.
+          <div className="text-center mt-8">
+            <p className="text-muted-foreground">
+              Don't see your insurance? Contact us to verify coverage.
             </p>
-            <p className="text-sm text-muted-foreground">
-              Credentialed through SimplePractice. Please call to verify your specific plan coverage.
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-24">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6">Frequently Asked Questions</h2>
+            <p className="text-lg text-muted-foreground">
+              Everything you need to know about Syndica Concierge Care
             </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">What makes Syndica different from traditional healthcare?</h3>
+                    <p className="text-muted-foreground">
+                      Syndica prioritizes quality over quantity. We limit patient panels to ensure you receive personalized attention and timely care. No more waiting weeks for appointments—we're here when you need us, with direct provider access and flexible scheduling.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">Do you accept insurance?</h3>
+                    <p className="text-muted-foreground">
+                      Yes! We accept most major insurance carriers including Blue Cross Blue Shield, Aetna, Cigna, UnitedHealthcare, Humana, and Medicare. Your membership fee covers concierge services, while medical services are billed through insurance.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">Can I cancel my membership anytime?</h3>
+                    <p className="text-muted-foreground">
+                      Absolutely. All memberships are month-to-month with no long-term contracts. You can cancel anytime with no penalties or fees. We believe in earning your trust every month.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">What happens if I go over my appointment time?</h3>
+                    <p className="text-muted-foreground">
+                      We respect everyone's time equally. If you choose to extend your appointment beyond the scheduled time, there's a $2 per minute charge. This ensures fairness for all patients and helps us maintain our commitment to punctual, quality care.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">Are aesthetic procedures included in my membership?</h3>
+                    <p className="text-muted-foreground">
+                      It depends on your tier. Essential Plus members receive 15% off procedures. Premium Plus members get $200 monthly credit plus 25% off additional treatments. VIP Plus members receive $400 monthly credit, 30% off all procedures, and complimentary quarterly treatments.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">Do you offer home visits?</h3>
+                    <p className="text-muted-foreground">
+                      Yes! Our concierge home visit service brings professional healthcare to your location. Perfect for aesthetic parties (groups of 3+), private consultations, or when you prefer the comfort of your own space. Available for Premium and VIP tier members.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">What areas do you serve?</h3>
+                    <p className="text-muted-foreground">
+                      We currently serve patients throughout South Carolina with telehealth and in-person services. Georgia licensure is coming Spring 2026. Concierge home visits are available within our service radius—contact us to confirm your location.
+                    </p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <h3 className="text-xl font-semibold mb-4">How quickly can I get an appointment?</h3>
+                    <p className="text-muted-foreground">
+                      It depends on your membership tier. Essential members are seen within 5 business days. Premium members get priority scheduling within 48 hours. VIP members receive same-day or next-day appointments. Emergency situations are always prioritized.
+                    </p>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6">What Our Patients Say</h2>
+            <p className="text-lg text-muted-foreground">
+              Real experiences from real patients
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <Carousel className="w-full">
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-lg text-foreground mb-4 italic">
+                      "Andrew talks fast but he truly takes the time to listen. He doesn't rush through appointments and makes sure I understand everything about my treatment plan. It's rare to find a provider who genuinely cares."
+                    </p>
+                    <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Aiken County</p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-lg text-foreground mb-4 italic">
+                      "I've been to many providers over the years, and Andy stands out for his clinical knowledge and attention to detail. He thoroughly explains conditions and treatment options, which I really appreciate."
+                    </p>
+                    <p className="text-sm text-muted-foreground font-semibold">Verified Patient, South Carolina</p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-lg text-foreground mb-4 italic">
+                      "The aesthetic results are exactly what I wanted—natural and subtle. Andrew has an artistic eye and really understands facial proportions. I finally found someone I trust completely."
+                    </p>
+                    <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Columbia Area</p>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className="luxury-card">
+                    <div className="flex gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    <p className="text-lg text-foreground mb-4 italic">
+                      "The convenience of telehealth combined with the option for in-person visits when needed is perfect. And knowing I can reach my provider directly instead of going through layers of staff is invaluable."
+                    </p>
+                    <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Charleston</p>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
@@ -796,226 +931,70 @@ export default function Home() {
       <section id="contact" className="py-24">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Get In Touch</h2>
+            <h2 className="mb-6">Get in Touch</h2>
             <p className="text-lg text-muted-foreground">
-              Ready to bridge the gap in your healthcare? Contact us today.
+              Ready to experience healthcare done differently? Contact us today.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-primary" />
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <Card className="luxury-card text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-8 w-8 text-primary" />
+                </div>
               </div>
-              <h3 className="text-2xl mb-2">Administrative</h3>
-              <p className="text-muted-foreground mb-4">For scheduling, billing, and general inquiries</p>
-              <a href="tel:8645235353" className="text-3xl font-bold text-primary hover:text-primary/80 transition-colors">
-                864-523-5353
+              <h3 className="text-xl font-semibold mb-2">Phone</h3>
+              <p className="text-muted-foreground mb-4">Call us directly</p>
+              <a href="tel:8033808893" className="text-primary hover:underline font-semibold">
+                (803) 380-8893
               </a>
-              <p className="text-sm text-muted-foreground mt-2">Syndica Solutions</p>
             </Card>
-            <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-primary" />
+            <Card className="luxury-card text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Video className="h-8 w-8 text-primary" />
+                </div>
               </div>
-              <h3 className="text-2xl mb-2">Clinical</h3>
-              <p className="text-muted-foreground mb-4">Direct line for medical questions</p>
-              <a href="tel:8033808893" className="text-3xl font-bold text-primary hover:text-primary/80 transition-colors">
-                803-380-8893
+              <h3 className="text-xl font-semibold mb-2">Schedule Online</h3>
+              <p className="text-muted-foreground mb-4">Book your appointment</p>
+              <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
+                SimplePractice Portal
               </a>
-              <p className="text-sm text-muted-foreground mt-2">Leave a message if with a patient</p>
+            </Card>
+            <Card className="luxury-card text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <MapPin className="h-8 w-8 text-primary" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Location</h3>
+              <p className="text-muted-foreground mb-4">Serving South Carolina</p>
+              <p className="text-primary font-semibold">
+                Telehealth & Home Visits
+              </p>
             </Card>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
-              <Video className="mr-2 h-5 w-5" />
-              Book Telehealth Visit
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-6 text-lg">
-              <HomeIcon className="mr-2 h-5 w-5" />
-              Request Home Visit
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="py-24 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Common questions about our gap-bridging telehealth and concierge care services
-            </p>
-          </div>
-
-          <Carousel className="max-w-4xl mx-auto">
-            <CarouselContent>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What is gap-bridging healthcare?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Gap-bridging healthcare provides timely access to medical care when you can't wait weeks for a traditional appointment. We complement your primary care physician by offering same-day or next-day services for urgent needs, specialized procedures, and convenient telehealth consultations. We work collaboratively with your existing healthcare team, not as a replacement.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Do you accept my insurance?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We accept most major insurance carriers including Blue Cross Blue Shield, Medicare, Medicaid, Aetna, UnitedHealthcare, Humana, Cigna, Tricare, Wellcare, Molina, and Ambetter. We're credentialed through SimplePractice for two locations. Please call 864-523-5353 to verify your specific plan coverage before your visit.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                How does telehealth work?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our telehealth services are available throughout South Carolina (Georgia license coming soon). Schedule a virtual consultation via phone or video call for aesthetic consultations, medication refills, follow-up appointments, and non-urgent medical concerns. After your consultation, prescriptions can be sent directly to your pharmacy, and GLP-1 weight loss medications ship directly to your home.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Can you come to my home?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Yes! We provide in-home concierge visits in Aiken County for parties of three or more patients. This is perfect for families, group wellness events, or corporate health services. Home visits allow us to bring professional healthcare directly to your location with flexible scheduling. Call 864-523-5353 to arrange a home visit.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What services do you provide?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                We offer a comprehensive range of gap-bridging services:
-              </p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Urgent Care:</strong> Sinus infections, UTIs, minor acute illnesses</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Injections:</strong> Joint injections, trigger point injections, GLP-1 weight loss</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Telehealth:</strong> Virtual consultations, medication refills, follow-ups</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Weight Loss:</strong> Medical-grade GLP-1 programs with direct shipping</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Aesthetics:</strong> Injectable treatments and skin rejuvenation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>ED Treatment:</strong> Prescription medications and consultations</span>
-                </li>
-              </ul>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Will you replace my primary care doctor?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                No. Syndica Concierge Care is designed to complement your existing primary care physician, not replace them. We bridge gaps when you need timely care but can't wait weeks for an appointment. We work collaboratively with your PCP's office to coordinate care and ensure continuity. You should maintain your relationship with your primary care provider for ongoing comprehensive health management.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                How do I schedule an appointment?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Call our administrative line at <a href="tel:8645235353" className="text-primary hover:underline font-semibold">864-523-5353</a> (Syndica Solutions) for scheduling, billing, and general inquiries. For urgent medical questions, call our clinical line at <a href="tel:8033808893" className="text-primary hover:underline font-semibold">803-380-8893</a>. You may leave a message if I'm with a patient, and I'll return your call promptly.
-              </p>
-            </Card>
-
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What are your qualifications?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Andrew Bridges is a board-certified Nurse Practitioner with extensive experience in primary care and specialized training in orthopedics and urology. Licensed in South Carolina with a Georgia license coming soon, Andrew practices under a collaborative physician agreement as required by SC law. He maintains a 5.0 patient rating and is known for taking time to listen, thoroughly explaining conditions, and providing consistent follow-up care.
-              </p>
-            </Card>
-            </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-12">
+      <footer className="bg-muted/50 py-12">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/OKg6qhkFdz9kD72oDSPBZ8_1770653036118_na1fn_c3luZGljYS1sb2dv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L09LZzZxaGtGZHo5a0Q3Mm9EU1BCWjhfMTc3MDY1MzAzNjExOF9uYTFmbl9jM2x1WkdsallTMXNiMmR2LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IvOLbMcUjFhVpQqj4JSuJKZ6TsoWr1-1sjbcIAPsUrXuQPdtlF7LthnqrnNDz7SgJci3dZv-hgLNfDWNcRvAIXqURSsT3j-PI1GUmLaK~UMthRQgz98TBiiAUro21ll7TBxekL5pA9rdz0hy5px31Uuw3ircA3f6abjmx2OLpsUi9d7MaGiA1NDzNeIalZpcuZVKoKCn0W-o7QTm8Atz9GiKTj-YR-8jVC58rE3JKjBU--XNZgnLDz~3q1jtrqJ8vNFuYpxG6jVY5nvDiOdjhfXLc3Wy1oaLHVwXOrs47PkWU0WGMgB9aMnte~YRZ2TsuRSGiLILnTzalsRxPbaCeA__"
-                alt="Syndica Concierge Care"
-                className="h-12 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-sm text-background/70">
-                Premium telehealth and concierge medical services in South Carolina
-              </p>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Syndica</h2>
+            <p className="text-muted-foreground mb-6">
+              Concierge Care • South Carolina
+            </p>
+            <div className="flex justify-center gap-8 mb-8">
+              <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Services</a>
+              <a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">Pricing</a>
+              <a href="#insurance" className="text-muted-foreground hover:text-primary transition-colors">Insurance</a>
+              <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a>
+              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a>
             </div>
-            <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="#services" className="hover:text-background transition-colors">Urgent Care</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Injections</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Telehealth</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Weight Loss</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Aesthetics</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">About</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="#about" className="hover:text-background transition-colors">Meet the Provider</a></li>
-                <li><a href="#insurance" className="hover:text-background transition-colors">Insurance</a></li>
-                <li><a href="#contact" className="hover:text-background transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="tel:8645235353" className="hover:text-background transition-colors">864-523-5353</a></li>
-                <li><a href="tel:8033808893" className="hover:text-background transition-colors">803-380-8893</a></li>
-                <li className="pt-2">Aiken County, SC</li>
-                <li>Statewide Telehealth</li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-background/20 pt-8 text-center text-sm text-background/70">
-            <p>&copy; 2026 Syndica Concierge Care. All rights reserved. | Andrew Bridges, NP</p>
+            <p className="text-sm text-muted-foreground">
+              © 2026 Syndica Concierge Care. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
