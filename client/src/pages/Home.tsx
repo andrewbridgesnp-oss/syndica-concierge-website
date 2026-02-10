@@ -163,7 +163,7 @@ export default function Home() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/dpSDawtGmtTQDwuv.mp4" type="video/mp4" />
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/iBekSUnWPGXzTNTY.mp4" type="video/mp4" />
                 </video>
               </div>
               <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Resting Bliss Face</h3>
