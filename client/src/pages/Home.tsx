@@ -45,19 +45,26 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Syndica Concierge Care
+            Syndica Bridges the Gaps
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl">
-            Premium Patient-First Care
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl">
-              <Video className="mr-2 h-6 w-6" />
-              Schedule Consult via Telehealth
+          <p className="text-2xl md:text-3xl text-white/95 mb-2 font-semibold">Between Traditional Healthcare Modalities</p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl" asChild>
+              <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
+                <Video className="mr-2 h-6 w-6" />
+                Schedule Consult via Telehealth
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-10 py-7 text-lg shadow-2xl backdrop-blur-sm">
-              <Phone className="mr-2 h-6 w-6" />
-              Call Now
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-10 py-7 text-lg shadow-2xl backdrop-blur-sm" asChild>
+              <a href="tel:8033808893">
+                <Phone className="mr-2 h-6 w-6" />
+                Call Now
+              </a>
+            </Button>
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-10 py-7 text-lg shadow-2xl backdrop-blur-sm" asChild>
+              <a href="https://app.syndicasolutions.com" target="_blank" rel="noopener noreferrer">
+                Patient Portal
+              </a>
             </Button>
           </div>
         </div>
@@ -97,10 +104,10 @@ export default function Home() {
                 <p className="text-sm font-semibold text-primary">Premium Patient-First Care</p>
               </div>
               <h1 className="text-gradient-pink">
-                Bridging Gaps in Your Healthcare
+                Restoring Your Time, Remodeling Your Care
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Professional healthcare services for when you need care now, not in five weeks. Complementing your primary care physician with timely access to treatment, procedures, and specialized services throughout South Carolina.
+                Syndica's Concierge Care restores your time with after-hours availability, direct provider access, and a growing network of specialists. You choose your appointment time, visit length, and desired outcomes—discussed first, not last. With 20-minute buffers between visits, we respect everyone's schedule equally. Extended appointments are available at premium rates to honor every patient's time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
@@ -136,9 +143,9 @@ export default function Home() {
       <section id="services" className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Gap-Bridging Healthcare</h2>
+            <h2 className="mb-6">The Perfect Number</h2>
             <p className="text-lg text-muted-foreground">
-              Timely access to care when your schedule and health needs don't align with traditional appointment availability
+              At Syndica, quality trumps quantity. Each provider maintains a carefully limited patient panel—because we believe the patient-provider relationship holds value beyond monetary gain. Provider-led. Patient-led. Outcome-driven.
             </p>
           </div>
 
@@ -146,11 +153,15 @@ export default function Home() {
             {/* Resting Bliss Face - Signature Service */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/TkrOCPXQqodkqvoW.png"
-                  alt="Andrew Bridges, NP - Aesthetic Injectable Specialist"
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/dpSDawtGmtTQDwuv.mp4" type="video/mp4" />
+                </video>
               </div>
               <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Resting Bliss Face</h3>
               <p className="text-muted-foreground mb-6">
@@ -179,11 +190,15 @@ export default function Home() {
             {/* Telehealth */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/jKadmmNLlqNroclT.png"
-                  alt="Andrew Bridges, NP - Telehealth Provider"
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/zBGpCfrbUIhNlpum.mp4" type="video/mp4" />
+                </video>
               </div>
               <h3 className="text-2xl mb-4">Telehealth Consultations</h3>
               <p className="text-muted-foreground mb-6">
@@ -212,11 +227,15 @@ export default function Home() {
             {/* Injections & Procedures */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/gZTIvsVvHaTXkQvm.png"
-                  alt="Andrew Bridges, NP - Injection Specialist"
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZVkgvEklVQJMSsOx.mp4" type="video/mp4" />
+                </video>
               </div>
               <h3 className="text-2xl mb-4">Injections & Procedures</h3>
               <p className="text-muted-foreground mb-6">
@@ -248,8 +267,8 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/MMDUusZHfQYLMunN.jpg"
-                  alt="Andrew Bridges, NP - Weight Loss Specialist"
+                  src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/Reo3OuBW3Vt6ssIDFcjb2G-img-1_1770733128000_na1fn_c2VydmljZS13ZWlnaHQtbG9zcy1zaG9wcGluZw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L1JlbzNPdUJXM1Z0NnNzSURGY2piMkctaW1nLTFfMTc3MDczMzEyODAwMF9uYTFmbl9jMlZ5ZG1salpTMTNaV2xuYUhRdGJHOXpjeTF6YUc5d2NHbHVady5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=e6V-s65GkgXev5EotR0i8Ld9OQkS6SZYcWvFZm9O3weHSPs7D35uyfwNf5sod8oODCJDU11uftDPxURwLe678vWxFw6ZK20e3jPHYTNHrMGiHP1wJKFpuurlYVsaivQ3GKHQWyohg5ayfb1goJKpOZFhCYlJBhyIDHiLcfNqVzGFM-OBEusNXeH9QV48ifHVbScSYMNAb6OKCWF5Ws4ke~n7AFdYLlHjeKaUYEhKyxiehoBYgc0URIUDRvStRGtGfLPKJZdRpNwdNQgWrsf0Nb4NojMrom4HJJ04lq6~-ce5D0j7dswvcJyb~M6P8b7SVi~NNigkSQMibhQ5k8vHqQ__"
+                  alt="Weight Loss Success - Woman Shopping Smaller Sizes"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -372,7 +391,7 @@ export default function Home() {
                     <HomeIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">In-Home Visits</h4>
+                    <h4 className="font-semibold mb-1">Let Syndica come to you</h4>
                     <p className="text-sm text-muted-foreground">Professional care in the comfort of your own home for parties of 3 or more</p>
                   </div>
                 </div>
@@ -475,7 +494,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-lg text-foreground mb-4 italic">
-                "Andrew truly takes the time to listen. He doesn't rush through appointments and makes sure I understand everything about my treatment plan. It's rare to find a provider who genuinely cares."
+                "Andrew talks fast but he truly takes the time to listen. He doesn't rush through appointments and makes sure I understand everything about my treatment plan. It's rare to find a provider who genuinely cares."
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Aiken County</p>
             </Card>
@@ -488,7 +507,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-lg text-foreground mb-4 italic">
-                "I've been to many providers over the years, and Andrew stands out for his clinical knowledge and attention to detail. He thoroughly explains conditions and treatment options, which I really appreciate."
+                "I've been to many providers over the years, and Andy stands out for his clinical knowledge and attention to detail. He thoroughly explains conditions and treatment options, which I really appreciate."
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, South Carolina</p>
             </Card>
