@@ -44,14 +44,14 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-6 -mt-16 overflow-hidden">
+          <div className="mb-6 -mt-48 overflow-hidden">
             <h1 className="text-5xl md:text-7xl font-bold text-white flex flex-wrap items-center justify-center gap-x-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               <span className="inline-block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Syndica</span>
               <span className="inline-block animate-slide-in-bottom" style={{ animationDelay: '0.8s' }}>Bridges</span>
               <span className="inline-block animate-slide-in-right" style={{ animationDelay: '0.2s' }}>the Gaps</span>
             </h1>
           </div>
-          <p className="text-2xl md:text-3xl text-white/95 mb-2 font-semibold">Between Traditional Healthcare Modalities</p>
+          <p className="text-2xl md:text-3xl text-white/95 mb-2 font-semibold -mt-12">Between Traditional Healthcare Modalities</p>
           <div className="flex flex-col sm:flex-row gap-4 mt-16">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl" asChild>
               <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
