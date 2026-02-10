@@ -13,7 +13,8 @@ import {
   Clock,
   Award,
   MapPin,
-  Star
+  Star,
+  Check
 } from "lucide-react";
 
 /**
@@ -43,15 +44,13 @@ export default function Home() {
           <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/dpSDawtGmtTQDwuv.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+        
+        {/* Logo in upper left */}
+        <div className="absolute top-8 left-8 z-20">
+          <h1 className="text-4xl font-bold text-white" style={{ fontFamily: 'Playfair Display, serif' }}>Syndica</h1>
+        </div>
+        
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <div className="mb-6 -mt-48 overflow-hidden">
-            <h1 className="text-5xl md:text-7xl font-bold text-white flex flex-wrap items-center justify-center gap-x-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              <span className="inline-block animate-slide-in-left" style={{ animationDelay: '0.2s' }}>Syndica</span>
-              <span className="inline-block animate-slide-in-bottom" style={{ animationDelay: '0.8s' }}>Bridges</span>
-              <span className="inline-block animate-slide-in-right" style={{ animationDelay: '0.2s' }}>the Gaps</span>
-            </h1>
-          </div>
-          <p className="text-2xl md:text-3xl text-white/95 mb-2 font-semibold -mt-12">Between Traditional Healthcare Modalities</p>
           <div className="flex flex-col sm:flex-row gap-4 mt-16">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl" asChild>
               <a href="https://syndicasolutions.clientsecure.me" target="_blank" rel="noopener noreferrer">
@@ -608,6 +607,153 @@ export default function Home() {
                 Access Patient Portal
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Membership Pricing Section */}
+      <section id="pricing" className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6">Concierge Membership Tiers</h2>
+            <p className="text-lg text-muted-foreground">
+              Choose the membership level that fits your healthcare needs. All tiers include priority scheduling and direct provider access.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Essential Tier */}
+            <Card className="luxury-card relative">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Essential</h3>
+                <div className="flex items-baseline justify-center gap-2 mb-4">
+                  <span className="text-5xl font-bold text-primary">$199</span>
+                  <span className="text-muted-foreground">/month</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Perfect for individuals seeking timely care</p>
+              </div>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Priority scheduling within 48 hours</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Unlimited telehealth consultations</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Direct provider messaging</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Standard appointment times (30 min)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Insurance accepted for services</span>
+                </li>
+              </ul>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                Get Started
+              </Button>
+            </Card>
+
+            {/* Premium Tier */}
+            <Card className="luxury-card relative border-2 border-primary shadow-luxury">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-6 py-1 rounded-full text-sm font-semibold">
+                Most Popular
+              </div>
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Premium</h3>
+                <div className="flex items-baseline justify-center gap-2 mb-4">
+                  <span className="text-5xl font-bold text-primary">$399</span>
+                  <span className="text-muted-foreground">/month</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Comprehensive care with extended access</p>
+              </div>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Same-day or next-day scheduling</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Unlimited telehealth + in-office visits</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">24/7 direct provider access</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Extended appointments (up to 60 min)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">After-hours availability</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Discounted aesthetic procedures (15% off)</span>
+                </li>
+              </ul>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                Get Started
+              </Button>
+            </Card>
+
+            {/* VIP Tier */}
+            <Card className="luxury-card relative">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>VIP</h3>
+                <div className="flex items-baseline justify-center gap-2 mb-4">
+                  <span className="text-5xl font-bold text-primary">$799</span>
+                  <span className="text-muted-foreground">/month</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Ultimate concierge healthcare experience</p>
+              </div>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Immediate scheduling (within hours)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Unlimited visits (telehealth, office, home)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">24/7 concierge support line</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Flexible appointment length (your choice)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Priority home visit scheduling</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Complimentary aesthetic consultations</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">VIP aesthetic pricing (25% off all procedures)</span>
+                </li>
+              </ul>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
+                Get Started
+              </Button>
+            </Card>
+          </div>
+          <div className="mt-12 text-center max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-2">
+              All memberships are month-to-month with no long-term contracts. Cancel anytime.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Procedures, medications, and specialized services billed separately at member rates.
+            </p>
           </div>
         </div>
       </section>
