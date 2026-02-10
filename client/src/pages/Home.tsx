@@ -52,7 +52,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl">
               <Video className="mr-2 h-6 w-6" />
-              Start Telehealth Visit
+              Schedule Consult via Telehealth
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-10 py-7 text-lg shadow-2xl backdrop-blur-sm">
               <Phone className="mr-2 h-6 w-6" />
@@ -104,7 +104,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
                   <Video className="mr-2 h-5 w-5" />
-                  Start Telehealth Visit
+                  Schedule Consult via Telehealth
                 </Button>
                 <Button size="lg" variant="outline" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-6 text-lg">
                   <Phone className="mr-2 h-5 w-5" />
