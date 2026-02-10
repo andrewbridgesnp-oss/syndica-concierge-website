@@ -567,6 +567,128 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Common questions about our gap-bridging telehealth and concierge care services
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {/* FAQ Item 1 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                What is gap-bridging healthcare?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Gap-bridging healthcare provides timely access to medical care when you can't wait weeks for a traditional appointment. We complement your primary care physician by offering same-day or next-day services for urgent needs, specialized procedures, and convenient telehealth consultations. We work collaboratively with your existing healthcare team, not as a replacement.
+              </p>
+            </Card>
+
+            {/* FAQ Item 2 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Do you accept my insurance?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We accept most major insurance carriers including Blue Cross Blue Shield, Medicare, Medicaid, Aetna, UnitedHealthcare, Humana, Cigna, Tricare, Wellcare, Molina, and Ambetter. We're credentialed through SimplePractice for two locations. Please call 864-523-5353 to verify your specific plan coverage before your visit.
+              </p>
+            </Card>
+
+            {/* FAQ Item 3 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                How does telehealth work?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Our telehealth services are available throughout South Carolina (Georgia license coming soon). Schedule a virtual consultation via phone or video call for aesthetic consultations, medication refills, follow-up appointments, and non-urgent medical concerns. After your consultation, prescriptions can be sent directly to your pharmacy, and GLP-1 weight loss medications ship directly to your home.
+              </p>
+            </Card>
+
+            {/* FAQ Item 4 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Can you come to my home?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Yes! We provide in-home concierge visits in Aiken County for parties of three or more patients. This is perfect for families, group wellness events, or corporate health services. Home visits allow us to bring professional healthcare directly to your location with flexible scheduling. Call 864-523-5353 to arrange a home visit.
+              </p>
+            </Card>
+
+            {/* FAQ Item 5 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                What services do you provide?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We offer a comprehensive range of gap-bridging services:
+              </p>
+              <ul className="space-y-2 text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>Urgent Care:</strong> Sinus infections, UTIs, minor acute illnesses</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>Injections:</strong> Joint injections, trigger point injections, GLP-1 weight loss</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>Telehealth:</strong> Virtual consultations, medication refills, follow-ups</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>Weight Loss:</strong> Medical-grade GLP-1 programs with direct shipping</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>Aesthetics:</strong> Injectable treatments and skin rejuvenation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong>ED Treatment:</strong> Prescription medications and consultations</span>
+                </li>
+              </ul>
+            </Card>
+
+            {/* FAQ Item 6 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                Will you replace my primary care doctor?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                No. Syndica Concierge Care is designed to complement your existing primary care physician, not replace them. We bridge gaps when you need timely care but can't wait weeks for an appointment. We work collaboratively with your PCP's office to coordinate care and ensure continuity. You should maintain your relationship with your primary care provider for ongoing comprehensive health management.
+              </p>
+            </Card>
+
+            {/* FAQ Item 7 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                How do I schedule an appointment?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Call our administrative line at <a href="tel:8645235353" className="text-primary hover:underline font-semibold">864-523-5353</a> (Syndica Solutions) for scheduling, billing, and general inquiries. For urgent medical questions, call our clinical line at <a href="tel:8033808893" className="text-primary hover:underline font-semibold">803-380-8893</a>. You may leave a message if I'm with a patient, and I'll return your call promptly.
+              </p>
+            </Card>
+
+            {/* FAQ Item 8 */}
+            <Card className="p-8 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+                What are your qualifications?
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Andrew Bridges is a board-certified Nurse Practitioner with extensive experience in primary care and specialized training in orthopedics and urology. Licensed in South Carolina with a Georgia license coming soon, Andrew practices under a collaborative physician agreement as required by SC law. He maintains a 5.0 patient rating and is known for taking time to listen, thoroughly explaining conditions, and providing consistent follow-up care.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-foreground text-background py-12">
         <div className="container">
