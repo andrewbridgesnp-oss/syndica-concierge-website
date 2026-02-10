@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { 
   Phone, 
   Video, 
@@ -39,7 +40,7 @@ export default function Home() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZxFMDZBMZqtTbGGF.mp4" type="video/mp4" />
+          <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/dpSDawtGmtTQDwuv.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
@@ -146,7 +147,7 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/TkrOCPXQqodkqvoW.png"
                   alt="Andrew Bridges, NP - Aesthetic Injectable Specialist"
                   className="w-full h-full object-cover"
                 />
@@ -175,77 +176,11 @@ export default function Home() {
               </ul>
             </Card>
 
-            {/* Urgent Care */}
-            <Card className="luxury-card group overflow-hidden">
-              <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Urgent Care Specialist"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Urgent Care Access</h3>
-              <p className="text-muted-foreground mb-6">
-                When you can't wait weeks for an appointment. Sinus infections, UTIs, minor acute illnesses treated promptly.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Acute illness treatment</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Same-day or next-day availability</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Antibiotic prescriptions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Not emergency care (call 911 for emergencies)</span>
-                </li>
-              </ul>
-            </Card>
-
-            {/* Injections & Procedures */}
-            <Card className="luxury-card group overflow-hidden">
-              <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
-                  alt="Andrew Bridges, NP - Injection Specialist"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Injections & Procedures</h3>
-              <p className="text-muted-foreground mb-6">
-                Specialized procedures without the specialist wait time. Professional treatment for pain management and therapeutic needs.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Joint injections</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Trigger point injections</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Weight loss injections (GLP-1)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">In-home or clinic setting</span>
-                </li>
-              </ul>
-            </Card>
-
             {/* Telehealth */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/jKadmmNLlqNroclT.png"
                   alt="Andrew Bridges, NP - Telehealth Provider"
                   className="w-full h-full object-cover"
                 />
@@ -274,11 +209,46 @@ export default function Home() {
               </ul>
             </Card>
 
+            {/* Injections & Procedures */}
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/gZTIvsVvHaTXkQvm.png"
+                  alt="Andrew Bridges, NP - Injection Specialist"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl mb-4">Injections & Procedures</h3>
+              <p className="text-muted-foreground mb-6">
+                Specialized procedures without the specialist wait time. Professional treatment for pain management and therapeutic needs.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Joint injections</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Trigger point injections</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Weight loss injections (GLP-1)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">In-home or clinic setting</span>
+                </li>
+              </ul>
+            </Card>
+
+
+
             {/* Weight Loss */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/MMDUusZHfQYLMunN.jpg"
                   alt="Andrew Bridges, NP - Weight Loss Specialist"
                   className="w-full h-full object-cover"
                 />
@@ -307,35 +277,35 @@ export default function Home() {
               </ul>
             </Card>
 
-            {/* Aesthetics */}
+            {/* Men's Health */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
-                  alt="Andrew Bridges, NP - Aesthetic Medicine Specialist"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfpOdaRXuPlbmeiX.jpg"
+                  alt="Andrew Bridges, NP - Men's Health Specialist"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl mb-4">Aesthetic Treatments</h3>
+              <h3 className="text-2xl mb-4">Men's Health</h3>
               <p className="text-muted-foreground mb-6">
-                Medical-grade aesthetic services with professional expertise. Look and feel your best with evidence-based treatments.
+                Discreet, professional men's health services. Erectile dysfunction treatment, testosterone management, and preventive care.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Injectable aesthetic treatments</span>
+                  <span className="text-sm">ED medication prescriptions</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Skin rejuvenation</span>
+                  <span className="text-sm">Testosterone therapy</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Personalized treatment plans</span>
+                  <span className="text-sm">Confidential telehealth consultations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Medical-grade products</span>
+                  <span className="text-sm">Preventive health screening</span>
                 </li>
               </ul>
             </Card>
@@ -344,7 +314,7 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/jKadmmNLlqNroclT.png"
                   alt="Andrew Bridges, NP - Concierge Care Provider"
                   className="w-full h-full object-cover"
                 />
@@ -376,53 +346,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Luxury Image Showcase - GLP-1 */}
-      <section className="py-24">
+      {/* Concierge Video Showcase */}
+      <section className="py-24 bg-muted/30">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative rounded-2xl overflow-hidden shadow-luxury">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/TZvTdamDA0BxkgAlgqXvZu-img-3_1770653392000_na1fn_bHV4dXJ5LWluamVjdGlvbi1jbG9zZXVw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L1RadlRkYW1EQTBCeGtnQWxncVh2WnUtaW1nLTNfMTc3MDY1MzM5MjAwMF9uYTFmbl9iSFY0ZFhKNUxXbHVhbVZqZEdsdmJpMWpiRzl6WlhWdy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=bliek9WmZu8RzzC8vjNEOjVsGgeP-ena7ofcBraFdYoesWVyesPHu7FKZzfHI1wuwzlWI65m6nrSJ5KJVNChivMZbvBMfHNSykcXI~X~KN~EjyvgvcY5Dh2JVyMGWoXWNVgK2unhPyANbhv9bQDUy4K6xDZSNyFR3lCs4EwZXx8jz3KVqbOvvtKCyoYpPqw-OKCebqJCfpvcmU1Psqd8-yLWFT9AurnojsGkXEmgfYnAAf~gl3Kz~ChjFtPW2Ee6vDuRu1lcA7UjXkMAA2zXHvhB2wN0~zg4UiHDzXOlOqWM7LZnM0ynnkLfqQ-AdwPdeGp~Gby8~tlnBU0RzcwJsQ__"
-                alt="GLP-1 Weight Loss Injection"
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
                 className="w-full h-auto"
-              />
+              >
+                <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/KADuTeMxltymTloI.mp4" type="video/mp4" />
+              </video>
             </div>
             <div className="space-y-6">
-              <h2>Medical-Grade Weight Loss</h2>
+              <h2 style={{ fontFamily: 'Playfair Display, serif' }}>Premium Concierge Care</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Access pharmaceutical-grade GLP-1 medications with professional medical oversight. Our weight loss program includes personalized treatment plans, ongoing monitoring, and medications that ship directly to your door.
+                Experience healthcare on your terms with our exclusive concierge services. We bring professional medical care directly to your home in Aiken County, creating a spa-like atmosphere of comfort and luxury.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
+                    <HomeIcon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Direct Shipping</h4>
-                    <p className="text-sm text-muted-foreground">GLP-1 medications delivered directly to your home with discreet packaging</p>
+                    <h4 className="font-semibold mb-1">In-Home Visits</h4>
+                    <p className="text-sm text-muted-foreground">Professional care in the comfort of your own home for parties of 3 or more</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
+                    <Sparkles className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Professional Oversight</h4>
-                    <p className="text-sm text-muted-foreground">Board-certified NP monitoring throughout your weight loss journey</p>
+                    <h4 className="font-semibold mb-1">Luxury Experience</h4>
+                    <p className="text-sm text-muted-foreground">Premium medical care delivered with the elegance of a high-end spa</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-2">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
+                    <Heart className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Telehealth Convenience</h4>
-                    <p className="text-sm text-muted-foreground">Virtual consultations from anywhere in South Carolina</p>
+                    <h4 className="font-semibold mb-1">Group Wellness</h4>
+                    <p className="text-sm text-muted-foreground">Perfect for families, friends, or corporate wellness events</p>
                   </div>
                 </div>
               </div>
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
-                Learn More About Weight Loss
+                Schedule Concierge Visit
               </Button>
             </div>
           </div>
@@ -491,8 +465,10 @@ export default function Home() {
               Real feedback from verified patients who have experienced our gap-bridging care model
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="luxury-card">
+          <Carousel className="max-w-4xl mx-auto">
+            <CarouselContent>
+            <CarouselItem className="md:basis-1/2">
+              <Card className="luxury-card mx-2">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />
@@ -503,7 +479,9 @@ export default function Home() {
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Aiken County</p>
             </Card>
-            <Card className="luxury-card">
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/2">
+              <Card className="luxury-card mx-2">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />
@@ -514,7 +492,9 @@ export default function Home() {
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, South Carolina</p>
             </Card>
-            <Card className="luxury-card">
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/2">
+              <Card className="luxury-card mx-2">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />
@@ -525,7 +505,9 @@ export default function Home() {
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Telehealth</p>
             </Card>
-            <Card className="luxury-card">
+            </CarouselItem>
+            <CarouselItem className="md:basis-1/2">
+              <Card className="luxury-card mx-2">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />
@@ -536,7 +518,11 @@ export default function Home() {
               </p>
               <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Concierge Care</p>
             </Card>
-          </div>
+            </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
@@ -636,9 +622,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* FAQ Item 1 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+          <Carousel className="max-w-4xl mx-auto">
+            <CarouselContent>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 What is gap-bridging healthcare?
               </h3>
@@ -647,8 +634,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 2 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Do you accept my insurance?
               </h3>
@@ -657,8 +645,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 3 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 How does telehealth work?
               </h3>
@@ -667,8 +656,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 4 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Can you come to my home?
               </h3>
@@ -677,8 +667,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 5 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 What services do you provide?
               </h3>
@@ -713,8 +704,9 @@ export default function Home() {
               </ul>
             </Card>
 
-            {/* FAQ Item 6 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Will you replace my primary care doctor?
               </h3>
@@ -723,8 +715,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 7 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 How do I schedule an appointment?
               </h3>
@@ -733,8 +726,9 @@ export default function Home() {
               </p>
             </Card>
 
-            {/* FAQ Item 8 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
+            </CarouselItem>
+            <CarouselItem>
+              <Card className="p-8 hover:shadow-lg transition-shadow mx-2">
               <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                 What are your qualifications?
               </h3>
@@ -742,7 +736,11 @@ export default function Home() {
                 Andrew Bridges is a board-certified Nurse Practitioner with extensive experience in primary care and specialized training in orthopedics and urology. Licensed in South Carolina with a Georgia license coming soon, Andrew practices under a collaborative physician agreement as required by SC law. He maintains a 5.0 patient rating and is known for taking time to listen, thoroughly explaining conditions, and providing consistent follow-up care.
               </p>
             </Card>
-          </div>
+            </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
