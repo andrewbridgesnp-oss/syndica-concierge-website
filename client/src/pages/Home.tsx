@@ -47,7 +47,7 @@ export default function Home() {
             Syndica Concierge Care
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl">
-            Premium Healthcare When You Need It
+            Premium Patient-First Care
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl">
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <p className="text-sm font-semibold text-primary">Premium Healthcare When You Need It</p>
+                <p className="text-sm font-semibold text-primary">Premium Patient-First Care</p>
               </div>
               <h1 className="text-gradient-pink">
                 Bridging Gaps in Your Healthcare
