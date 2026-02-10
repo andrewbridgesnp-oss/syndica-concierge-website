@@ -1,148 +1,81 @@
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { 
-  Phone, 
-  Video, 
-  Home as HomeIcon, 
-  Syringe, 
-  Sparkles, 
-  Heart, 
-  CheckCircle2,
-  Shield,
-  Clock,
-  Award,
-  MapPin,
-  Star
-} from "lucide-react";
-
-/**
- * SYNDICA CONCIERGE CARE - LUXURY MEDICAL WEBSITE
- * 
- * Design Philosophy: Million-Dollar Medical Excellence
- * - Silver/White backgrounds for pristine elegance
- * - Black text for maximum sophistication
- * - Electric Pink accents for premium brand identity
- * - Playfair Display luxury serif headings
- * - Hyper-realistic professional photography
- * - NO EMOJIS - Icons and imagery only
- */
+import { Button } from "@/components/ui/button";
+import { CheckCircle2, Phone, Video, Heart, Award, MapPin, Shield, Home as HomeIcon } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Video Hero - Top of Screen */}
-      <section className="relative w-full h-screen">
-        <video 
-          autoPlay 
-          loop 
-          muted 
+    <div className="min-h-screen">
+      {/* Video Hero Section */}
+      <section className="relative h-screen w-full overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZxFMDZBMZqtTbGGF.mp4" type="video/mp4" />
+          <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/KADuTeMxltymTloI.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
-        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Syndica Concierge Care
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl">
-            Premium Patient-First Care
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 text-lg shadow-2xl">
-              <Video className="mr-2 h-6 w-6" />
-              Schedule Consult via Telehealth
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-10 py-7 text-lg shadow-2xl backdrop-blur-sm">
-              <Phone className="mr-2 h-6 w-6" />
-              Call Now
-            </Button>
+        
+        {/* Dark gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+        
+        {/* Hero Content */}
+        <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              Syndica Concierge Care
+            </h1>
+            <p className="text-2xl md:text-3xl text-white/90 mb-8">
+              Premium Patient-First Care
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="text-lg px-8 py-6 bg-primary hover:bg-primary/90">
+                Schedule Consult via Telehealth
+              </Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20">
+                Call Now: 803-380-8893
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Luxury Navigation */}
-      <nav className="sticky top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+      {/* Sticky Navigation */}
+      <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="container">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center gap-2">
               <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/OKg6qhkFdz9kD72oDSPBZ8_1770653036118_na1fn_c3luZGljYS1sb2dv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L09LZzZxaGtGZHo5a0Q3Mm9EU1BCWjhfMTc3MDY1MzAzNjExOF9uYTFmbl9jM2x1WkdsallTMXNiMmR2LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IvOLbMcUjFhVpQqj4JSuJKZ6TsoWr1-1sjbcIAPsUrXuQPdtlF7LthnqrnNDz7SgJci3dZv-hgLNfDWNcRvAIXqURSsT3j-PI1GUmLaK~UMthRQgz98TBiiAUro21ll7TBxekL5pA9rdz0hy5px31Uuw3ircA3f6abjmx2OLpsUi9d7MaGiA1NDzNeIalZpcuZVKoKCn0W-o7QTm8Atz9GiKTj-YR-8jVC58rE3JKjBU--XNZgnLDz~3q1jtrqJ8vNFuYpxG6jVY5nvDiOdjhfXLc3Wy1oaLHVwXOrs47PkWU0WGMgB9aMnte~YRZ2TsuRSGiLILnTzalsRxPbaCeA__"
-                alt="Syndica Concierge Care Logo"
-                className="h-12 w-auto"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/kBvqzrsHGjtdvJjS.png" 
+                alt="Syndica Concierge Care Logo" 
+                className="h-10 w-auto"
               />
+              <span className="font-semibold text-lg" style={{ fontFamily: 'Playfair Display, serif' }}>Syndica Concierge Care</span>
             </div>
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Services</a>
-              <a href="#about" className="text-sm font-medium text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#insurance" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Insurance</a>
-              <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</a>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6">
-                Schedule Visit
-              </Button>
+            <div className="hidden md:flex items-center gap-6">
+              <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Services</a>
+              <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">About</a>
+              <a href="#insurance" className="text-sm font-medium hover:text-primary transition-colors">Insurance</a>
+              <a href="#faq" className="text-sm font-medium hover:text-primary transition-colors">FAQ</a>
+              <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Contact</a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section - Luxury Medical Excellence */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 luxury-gradient"></div>
-        <div className="container relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
-                <p className="text-sm font-semibold text-primary">Premium Patient-First Care</p>
-              </div>
-              <h1 className="text-gradient-pink">
-                Bridging Gaps in Your Healthcare
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Professional healthcare services for when you need care now, not in five weeks. Complementing your primary care physician with timely access to treatment, procedures, and specialized services throughout South Carolina.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
-                  <Video className="mr-2 h-5 w-5" />
-                  Schedule Consult via Telehealth
-                </Button>
-                <Button size="lg" variant="outline" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-6 text-lg">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now
-                </Button>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-primary/5 border border-primary/20 rounded-lg">
-                <Shield className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                <p className="text-sm text-foreground">
-                  <strong>Important:</strong> Syndica Concierge Care provides complementary healthcare services and is not intended to replace your primary care physician. We work collaboratively to bridge gaps in healthcare access.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-luxury">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Board-Certified Nurse Practitioner"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section - Luxury Cards */}
+      {/* Services Section */}
       <section id="services" className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Gap-Bridging Healthcare</h2>
+            <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Our Services</h2>
             <p className="text-lg text-muted-foreground">
-              Timely access to care when your schedule and health needs don't align with traditional appointment availability
+              Comprehensive healthcare solutions designed to bridge gaps in access and availability. From aesthetic treatments to urgent care, we're here when you need us.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Resting Bliss Face - Signature Service */}
+            {/* 1. Aesthetics (Resting Bliss Face) */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
@@ -175,115 +108,16 @@ export default function Home() {
               </ul>
             </Card>
 
-            {/* Urgent Care */}
+            {/* 2. Weight Loss (GLP-1 Programs) */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Urgent Care Specialist"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/WnkPQnEAOylVUJYT.jpg"
+                  alt="Weight Loss GLP-1 Programs"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl mb-4">Urgent Care Access</h3>
-              <p className="text-muted-foreground mb-6">
-                When you can't wait weeks for an appointment. Sinus infections, UTIs, minor acute illnesses treated promptly.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Acute illness treatment</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Same-day or next-day availability</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Antibiotic prescriptions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Not emergency care (call 911 for emergencies)</span>
-                </li>
-              </ul>
-            </Card>
-
-            {/* Injections & Procedures */}
-            <Card className="luxury-card group overflow-hidden">
-              <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
-                  alt="Andrew Bridges, NP - Injection Specialist"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Injections & Procedures</h3>
-              <p className="text-muted-foreground mb-6">
-                Specialized procedures without the specialist wait time. Professional treatment for pain management and therapeutic needs.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Joint injections</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Trigger point injections</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Weight loss injections (GLP-1)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">In-home or clinic setting</span>
-                </li>
-              </ul>
-            </Card>
-
-            {/* Telehealth */}
-            <Card className="luxury-card group overflow-hidden">
-              <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Telehealth Provider"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Telehealth Consultations</h3>
-              <p className="text-muted-foreground mb-6">
-                Virtual visits throughout South Carolina. Convenient access to professional healthcare from your home or office.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Statewide virtual consultations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Aesthetic consultations</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Follow-up appointments</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Georgia license coming soon</span>
-                </li>
-              </ul>
-            </Card>
-
-            {/* Weight Loss */}
-            <Card className="luxury-card group overflow-hidden">
-              <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
-                  alt="Andrew Bridges, NP - Weight Loss Specialist"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl mb-4">Weight Loss Programs</h3>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Weight Loss Programs</h3>
               <p className="text-muted-foreground mb-6">
                 Medical-grade weight loss treatments including GLP-1 medications that ship directly to you. Professional oversight throughout your journey.
               </p>
@@ -307,439 +141,366 @@ export default function Home() {
               </ul>
             </Card>
 
-            {/* Aesthetics */}
+            {/* 3. Men's Health (ED, Testosterone) */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lRqJMPFLHQksfqsG.png"
-                  alt="Andrew Bridges, NP - Aesthetic Medicine Specialist"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ptbJszUIxKKgLfAo.jpg"
+                  alt="Men's Health Services - Erectile Dysfunction & Testosterone"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl mb-4">Aesthetic Treatments</h3>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Men's Health</h3>
               <p className="text-muted-foreground mb-6">
-                Medical-grade aesthetic services with professional expertise. Look and feel your best with evidence-based treatments.
+                Discreet, professional men's health services. Erectile dysfunction treatment, testosterone management, and preventive care.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Injectable aesthetic treatments</span>
+                  <span className="text-sm">ED medication prescriptions</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Skin rejuvenation</span>
+                  <span className="text-sm">Testosterone therapy</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Personalized treatment plans</span>
+                  <span className="text-sm">Confidential telehealth consultations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Medical-grade products</span>
+                  <span className="text-sm">Preventive health screening</span>
                 </li>
               </ul>
             </Card>
 
-            {/* Concierge Home Visits */}
+            {/* 4. Telehealth (Virtual Consultations) */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
-                  alt="Andrew Bridges, NP - Concierge Care Provider"
+                  alt="Andrew Bridges, NP - Telehealth Provider"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl mb-4">Concierge Home Visits</h3>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Telehealth Consultations</h3>
               <p className="text-muted-foreground mb-6">
-                In-person care in Aiken County. We come to you for parties of 3 or more, bringing professional healthcare to your location.
+                Virtual visits throughout South Carolina. Convenient access to professional healthcare from your home or office.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Home visits (3+ patients)</span>
+                  <span className="text-sm">Statewide virtual consultations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Group wellness events</span>
+                  <span className="text-sm">Aesthetic consultations</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Corporate health services</span>
+                  <span className="text-sm">Follow-up appointments</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-sm">Flexible scheduling</span>
+                  <span className="text-sm">Georgia license coming soon</span>
                 </li>
               </ul>
             </Card>
-          </div>
-        </div>
-      </section>
 
-      {/* Luxury Image Showcase - GLP-1 */}
-      <section className="py-24">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-luxury">
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/TZvTdamDA0BxkgAlgqXvZu-img-3_1770653392000_na1fn_bHV4dXJ5LWluamVjdGlvbi1jbG9zZXVw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L1RadlRkYW1EQTBCeGtnQWxncVh2WnUtaW1nLTNfMTc3MDY1MzM5MjAwMF9uYTFmbl9iSFY0ZFhKNUxXbHVhbVZqZEdsdmJpMWpiRzl6WlhWdy5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=bliek9WmZu8RzzC8vjNEOjVsGgeP-ena7ofcBraFdYoesWVyesPHu7FKZzfHI1wuwzlWI65m6nrSJ5KJVNChivMZbvBMfHNSykcXI~X~KN~EjyvgvcY5Dh2JVyMGWoXWNVgK2unhPyANbhv9bQDUy4K6xDZSNyFR3lCs4EwZXx8jz3KVqbOvvtKCyoYpPqw-OKCebqJCfpvcmU1Psqd8-yLWFT9AurnojsGkXEmgfYnAAf~gl3Kz~ChjFtPW2Ee6vDuRu1lcA7UjXkMAA2zXHvhB2wN0~zg4UiHDzXOlOqWM7LZnM0ynnkLfqQ-AdwPdeGp~Gby8~tlnBU0RzcwJsQ__"
-                alt="GLP-1 Weight Loss Injection"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="space-y-6">
-              <h2>Medical-Grade Weight Loss</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Access pharmaceutical-grade GLP-1 medications with professional medical oversight. Our weight loss program includes personalized treatment plans, ongoing monitoring, and medications that ship directly to your door.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Direct Shipping</h4>
-                    <p className="text-sm text-muted-foreground">GLP-1 medications delivered directly to your home with discreet packaging</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Professional Oversight</h4>
-                    <p className="text-sm text-muted-foreground">Board-certified NP monitoring throughout your weight loss journey</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Telehealth Convenience</h4>
-                    <p className="text-sm text-muted-foreground">Virtual consultations from anywhere in South Carolina</p>
-                  </div>
-                </div>
+            {/* 5. Injections (Non-Aesthetic: Joint/Trigger Point) */}
+            <Card className="luxury-card group overflow-hidden">
+              <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/iyUWaEGpKtxNseST.png"
+                  alt="Therapeutic Injections - Joint & Trigger Point"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
-                Learn More About Weight Loss
-              </Button>
-            </div>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Therapeutic Injections</h3>
+              <p className="text-muted-foreground mb-6">
+                Specialized procedures without the specialist wait time. Professional treatment for pain management and therapeutic needs.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Joint injections</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Trigger point injections</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">Pain management therapy</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm">In-home or clinic setting</span>
+                </li>
+              </ul>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-muted/30">
+      <section id="about" className="py-24 bg-background">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-luxury">
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/bhzsFkprQfPBemlG.png"
-                alt="Andrew Bridges, NP - Board-Certified Nurse Practitioner"
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div>
-                <h2 className="mb-2">Andrew Bridges, NP</h2>
-                <p className="text-xl text-primary font-semibold">Board-Certified Nurse Practitioner</p>
+              <div className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
+                <p className="text-sm font-semibold text-primary">Board-Certified Nurse Practitioner</p>
               </div>
+              <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Meet Andrew Bridges, NP</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Andrew Bridges is a board-certified Nurse Practitioner dedicated to bridging gaps in healthcare access throughout South Carolina. With extensive experience in primary care and specialized training in orthopedics and urology, Andrew brings a unique blend of clinical expertise and genuine compassion to every patient interaction.
+                Andrew Bridges brings extensive clinical experience across primary care, orthopedics, and urology to Syndica Concierge Care. As a board-certified nurse practitioner, he understands the frustration of waiting weeks for appointments when health concerns demand immediate attention.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Throughout his career, Andrew has built a reputation for taking the time to truly listen to his patients, thoroughly explaining conditions and treatment options, and providing consistent follow-up care. His clinical background spans multiple specialties, with a strong foundation in primary care complemented by focused experience in orthopedics—a specialty he particularly loves—and urology.
+                His practice philosophy centers on bridging gaps in healthcare access—not replacing your primary care physician, but complementing your existing care team when timing and availability create barriers to treatment.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Andrew's approach emphasizes collaboration with your existing healthcare team. Syndica Concierge Care is designed to complement your primary care physician by providing timely access to care when you need it most, specialized procedures, and convenient telehealth services throughout South Carolina.
-              </p>
-              <div className="grid grid-cols-3 gap-6 pt-6">
+              <div className="grid sm:grid-cols-3 gap-6 pt-6">
                 <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <MapPin className="h-8 w-8 text-primary" />
-                  </div>
-                  <p className="text-2xl font-bold text-foreground">SC</p>
-                  <p className="text-sm text-muted-foreground">Licensed</p>
-                </div>
-                <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-3">
                     <Award className="h-8 w-8 text-primary" />
                   </div>
-                  <p className="text-2xl font-bold text-foreground">NP</p>
-                  <p className="text-sm text-muted-foreground">Board Certified</p>
+                  <p className="font-semibold">Board Certified</p>
+                  <p className="text-sm text-muted-foreground">Nurse Practitioner</p>
                 </div>
                 <div className="text-center">
-                  <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-3">
                     <MapPin className="h-8 w-8 text-primary" />
                   </div>
-                  <p className="text-2xl font-bold text-foreground">GA</p>
-                  <p className="text-sm text-muted-foreground">Coming Soon</p>
+                  <p className="font-semibold">SC Licensed</p>
+                  <p className="text-sm text-muted-foreground">GA Coming Soon</p>
                 </div>
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-3">
+                    <Heart className="h-8 w-8 text-primary" />
+                  </div>
+                  <p className="font-semibold">Patient-First</p>
+                  <p className="text-sm text-muted-foreground">Care Philosophy</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-luxury">
+                <img 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/GsyCskLswxaUwPeR.png"
+                  alt="Andrew Bridges, NP - Board-Certified Nurse Practitioner"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24">
+      {/* Coverage Area */}
+      <section className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">What Patients Say</h2>
+            <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Service Area</h2>
             <p className="text-lg text-muted-foreground">
-              Real feedback from verified patients who have experienced our gap-bridging care model
+              Comprehensive telehealth throughout South Carolina, with in-person concierge care in Aiken County
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="luxury-card">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="luxury-card text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <Video className="h-10 w-10 text-primary" />
               </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "Andrew truly takes the time to listen. He doesn't rush through appointments and makes sure I understand everything about my treatment plan. It's rare to find a provider who genuinely cares."
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Statewide Telehealth</h3>
+              <p className="text-muted-foreground">
+                Virtual consultations available throughout South Carolina. Georgia license coming soon.
               </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Aiken County</p>
             </Card>
-            <Card className="luxury-card">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
+            <Card className="luxury-card text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <HomeIcon className="h-10 w-10 text-primary" />
               </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "I've been to many providers over the years, and Andrew stands out for his clinical knowledge and attention to detail. He thoroughly explains conditions and treatment options, which I really appreciate."
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Aiken County Concierge</h3>
+              <p className="text-muted-foreground">
+                In-person home visits for parties of 3 or more patients in Aiken County.
               </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, South Carolina</p>
-            </Card>
-            <Card className="luxury-card">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "What I love most is the consistent follow-up care. Andrew checks in to make sure treatments are working and adjusts as needed. It's refreshing to have a provider who's accessible when you need them."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Telehealth</p>
-            </Card>
-            <Card className="luxury-card">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-lg text-foreground mb-4 italic">
-                "When I couldn't get an appointment with my regular doctor for weeks, Andrew was able to see me quickly for an urgent issue. He worked with my PCP's office to coordinate care. This is exactly what healthcare should be."
-              </p>
-              <p className="text-sm text-muted-foreground font-semibold">Verified Patient, Concierge Care</p>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Insurance Section */}
-      <section id="insurance" className="py-24 bg-muted/30">
+      <section id="insurance" className="py-24 bg-background">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Insurance & Payment</h2>
+            <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Insurance & Payment</h2>
             <p className="text-lg text-muted-foreground">
-              We accept most major insurance carriers and offer flexible payment options
+              We accept most major insurance carriers. SimplePractice will credential us for two locations to maximize your coverage options.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { name: "Blue Cross Blue Shield", subtitle: "All major plans accepted" },
-              { name: "Medicare", subtitle: "Medicare & Medicare Advantage" },
-              { name: "Medicaid", subtitle: "South Carolina Medicaid" },
-              { name: "Aetna", subtitle: "PPO, HMO, Open Choice" },
-              { name: "UnitedHealthcare", subtitle: "All major plans" },
-              { name: "Humana", subtitle: "PPO, HMO, Medicare" }
-            ].map((insurance, idx) => (
-              <Card key={idx} className="luxury-card text-center">
-                <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <Shield className="h-8 w-8 text-primary" />
+              'Blue Cross Blue Shield',
+              'Medicare',
+              'Medicaid',
+              'Aetna',
+              'UnitedHealthcare',
+              'Humana',
+              'Cigna',
+              'Tricare'
+            ].map((insurance) => (
+              <Card key={insurance} className="luxury-card text-center">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-3">
+                  <Shield className="h-6 w-6 text-primary" />
                 </div>
-                <h4 className="font-bold text-foreground mb-2">{insurance.name}</h4>
-                <p className="text-sm text-muted-foreground">{insurance.subtitle}</p>
+                <p className="font-semibold">{insurance}</p>
               </Card>
             ))}
           </div>
-          <div className="mt-12 text-center max-w-2xl mx-auto">
-            <p className="text-muted-foreground mb-2">
-              We also accept Cigna, Tricare, Wellcare, Molina, Ambetter, and many other carriers.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Credentialed through SimplePractice. Please call to verify your specific plan coverage.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-24">
-        <div className="container">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="mb-6">Get In Touch</h2>
-            <p className="text-lg text-muted-foreground">
-              Ready to bridge the gap in your healthcare? Contact us today.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-2xl mb-2">Administrative</h3>
-              <p className="text-muted-foreground mb-4">For scheduling, billing, and general inquiries</p>
-              <a href="tel:8645235353" className="text-3xl font-bold text-primary hover:text-primary/80 transition-colors">
-                864-523-5353
-              </a>
-              <p className="text-sm text-muted-foreground mt-2">Syndica Solutions</p>
-            </Card>
-            <Card className="luxury-card">
-              <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Phone className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="text-2xl mb-2">Clinical</h3>
-              <p className="text-muted-foreground mb-4">Direct line for medical questions</p>
-              <a href="tel:8033808893" className="text-3xl font-bold text-primary hover:text-primary/80 transition-colors">
-                803-380-8893
-              </a>
-              <p className="text-sm text-muted-foreground mt-2">Leave a message if with a patient</p>
-            </Card>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
-              <Video className="mr-2 h-5 w-5" />
-              Book Telehealth Visit
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-6 text-lg">
-              <HomeIcon className="mr-2 h-5 w-5" />
-              Request Home Visit
-            </Button>
-          </div>
+          <p className="text-center text-muted-foreground mt-8">
+            Don't see your insurance? Contact us to verify coverage.
+          </p>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section id="faq" className="py-24 bg-muted/30">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Common questions about our gap-bridging telehealth and concierge care services
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Frequently Asked Questions</h2>
+            <p className="text-lg text-muted-foreground">
+              Common questions about our gap-bridging healthcare model
             </p>
           </div>
-
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* FAQ Item 1 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What is gap-bridging healthcare?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Gap-bridging healthcare provides timely access to medical care when you can't wait weeks for a traditional appointment. We complement your primary care physician by offering same-day or next-day services for urgent needs, specialized procedures, and convenient telehealth consultations. We work collaboratively with your existing healthcare team, not as a replacement.
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">What is gap-bridging healthcare?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                We provide timely care when your regular doctor's schedule doesn't align with your health needs. We complement—not replace—your primary care physician.
               </p>
             </Card>
-
-            {/* FAQ Item 2 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Do you accept my insurance?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We accept most major insurance carriers including Blue Cross Blue Shield, Medicare, Medicaid, Aetna, UnitedHealthcare, Humana, Cigna, Tricare, Wellcare, Molina, and Ambetter. We're credentialed through SimplePractice for two locations. Please call 864-523-5353 to verify your specific plan coverage before your visit.
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">Do you accept insurance?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Yes! We accept most major insurance carriers including BCBS, Medicare, Medicaid, Aetna, UnitedHealthcare, Humana, Cigna, and Tricare.
               </p>
             </Card>
-
-            {/* FAQ Item 3 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                How does telehealth work?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Our telehealth services are available throughout South Carolina (Georgia license coming soon). Schedule a virtual consultation via phone or video call for aesthetic consultations, medication refills, follow-up appointments, and non-urgent medical concerns. After your consultation, prescriptions can be sent directly to your pharmacy, and GLP-1 weight loss medications ship directly to your home.
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">How does telehealth work?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Schedule a virtual consultation via phone or video. Available statewide in South Carolina for aesthetic consults, follow-ups, and medication management.
               </p>
             </Card>
-
-            {/* FAQ Item 4 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Can you come to my home?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Yes! We provide in-home concierge visits in Aiken County for parties of three or more patients. This is perfect for families, group wellness events, or corporate health services. Home visits allow us to bring professional healthcare directly to your location with flexible scheduling. Call 864-523-5353 to arrange a home visit.
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">Do you make home visits?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Yes! In Aiken County, we provide in-home concierge care for parties of 3 or more patients. Perfect for families or group wellness events.
               </p>
             </Card>
-
-            {/* FAQ Item 5 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What services do you provide?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                We offer a comprehensive range of gap-bridging services:
-              </p>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Urgent Care:</strong> Sinus infections, UTIs, minor acute illnesses</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Injections:</strong> Joint injections, trigger point injections, GLP-1 weight loss</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Telehealth:</strong> Virtual consultations, medication refills, follow-ups</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Weight Loss:</strong> Medical-grade GLP-1 programs with direct shipping</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>Aesthetics:</strong> Injectable treatments and skin rejuvenation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong>ED Treatment:</strong> Prescription medications and consultations</span>
-                </li>
-              </ul>
-            </Card>
-
-            {/* FAQ Item 6 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Will you replace my primary care doctor?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                No. Syndica Concierge Care is designed to complement your existing primary care physician, not replace them. We bridge gaps when you need timely care but can't wait weeks for an appointment. We work collaboratively with your PCP's office to coordinate care and ensure continuity. You should maintain your relationship with your primary care provider for ongoing comprehensive health management.
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">What services do you offer?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Aesthetic treatments, weight loss programs, men's health, telehealth consultations, therapeutic injections, and urgent care for non-emergency conditions.
               </p>
             </Card>
-
-            {/* FAQ Item 7 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                How do I schedule an appointment?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Call our administrative line at <a href="tel:8645235353" className="text-primary hover:underline font-semibold">864-523-5353</a> (Syndica Solutions) for scheduling, billing, and general inquiries. For urgent medical questions, call our clinical line at <a href="tel:8033808893" className="text-primary hover:underline font-semibold">803-380-8893</a>. You may leave a message if I'm with a patient, and I'll return your call promptly.
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">Will you work with my PCP?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Absolutely. We collaborate with your existing care team and can share records with your primary care physician to ensure coordinated care.
               </p>
             </Card>
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">How do I schedule an appointment?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Call our clinical line at <a href="tel:803-380-8893" className="text-primary hover:underline">803-380-8893</a> or administrative line at <a href="tel:864-523-5353" className="text-primary hover:underline">864-523-5353</a>. You may leave a message if we're with a patient.
+              </p>
+            </Card>
+            <Card className="luxury-card">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 flex-shrink-0">
+                  <CheckCircle2 className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold">What are your qualifications?</h3>
+              </div>
+              <p className="text-muted-foreground">
+                Andrew Bridges is a board-certified nurse practitioner with extensive experience in primary care, orthopedics, and urology. Licensed in South Carolina with Georgia license coming soon.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
 
-            {/* FAQ Item 8 */}
-            <Card className="p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-bold text-foreground mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
-                What are your qualifications?
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Andrew Bridges is a board-certified Nurse Practitioner with extensive experience in primary care and specialized training in orthopedics and urology. Licensed in South Carolina with a Georgia license coming soon, Andrew practices under a collaborative physician agreement as required by SC law. He maintains a 5.0 patient rating and is known for taking time to listen, thoroughly explaining conditions, and providing consistent follow-up care.
+      {/* Contact Section */}
+      <section id="contact" className="py-24 bg-background">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Get In Touch</h2>
+            <p className="text-lg text-muted-foreground">
+              Ready to experience premium patient-first care? Contact us today.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="luxury-card text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <Phone className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Clinical Line</h3>
+              <p className="text-muted-foreground mb-4">
+                For medical questions and patient care
+              </p>
+              <a href="tel:803-380-8893" className="text-2xl font-bold text-primary hover:underline">
+                803-380-8893
+              </a>
+              <p className="text-sm text-muted-foreground mt-2">
+                May leave message if with a patient
+              </p>
+            </Card>
+            <Card className="luxury-card text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6">
+                <Phone className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-2xl mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Administrative Line</h3>
+              <p className="text-muted-foreground mb-4">
+                For scheduling and billing inquiries
+              </p>
+              <a href="tel:864-523-5353" className="text-2xl font-bold text-primary hover:underline">
+                864-523-5353
+              </a>
+              <p className="text-sm text-muted-foreground mt-2">
+                Syndica Solutions admin support
               </p>
             </Card>
           </div>
@@ -747,49 +508,35 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-background py-12">
+      <footer className="bg-muted/50 border-t border-border py-12">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <img 
-                src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/OKg6qhkFdz9kD72oDSPBZ8_1770653036118_na1fn_c3luZGljYS1sb2dv.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L09LZzZxaGtGZHo5a0Q3Mm9EU1BCWjhfMTc3MDY1MzAzNjExOF9uYTFmbl9jM2x1WkdsallTMXNiMmR2LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=IvOLbMcUjFhVpQqj4JSuJKZ6TsoWr1-1sjbcIAPsUrXuQPdtlF7LthnqrnNDz7SgJci3dZv-hgLNfDWNcRvAIXqURSsT3j-PI1GUmLaK~UMthRQgz98TBiiAUro21ll7TBxekL5pA9rdz0hy5px31Uuw3ircA3f6abjmx2OLpsUi9d7MaGiA1NDzNeIalZpcuZVKoKCn0W-o7QTm8Atz9GiKTj-YR-8jVC58rE3JKjBU--XNZgnLDz~3q1jtrqJ8vNFuYpxG6jVY5nvDiOdjhfXLc3Wy1oaLHVwXOrs47PkWU0WGMgB9aMnte~YRZ2TsuRSGiLILnTzalsRxPbaCeA__"
-                alt="Syndica Concierge Care"
-                className="h-12 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-sm text-background/70">
-                Premium telehealth and concierge medical services in South Carolina
+              <h4 className="font-semibold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Syndica Concierge Care</h4>
+              <p className="text-sm text-muted-foreground">
+                Premium patient-first healthcare bridging gaps in access and availability.
               </p>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="#services" className="hover:text-background transition-colors">Urgent Care</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Injections</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Telehealth</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Weight Loss</a></li>
-                <li><a href="#services" className="hover:text-background transition-colors">Aesthetics</a></li>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Services</a></li>
+                <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
+                <li><a href="#insurance" className="text-muted-foreground hover:text-primary transition-colors">Insurance</a></li>
+                <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">About</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="#about" className="hover:text-background transition-colors">Meet the Provider</a></li>
-                <li><a href="#insurance" className="hover:text-background transition-colors">Insurance</a></li>
-                <li><a href="#contact" className="hover:text-background transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li><a href="tel:8645235353" className="hover:text-background transition-colors">864-523-5353</a></li>
-                <li><a href="tel:8033808893" className="hover:text-background transition-colors">803-380-8893</a></li>
-                <li className="pt-2">Aiken County, SC</li>
-                <li>Statewide Telehealth</li>
+              <h4 className="font-semibold mb-4">Contact</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Clinical: <a href="tel:803-380-8893" className="hover:text-primary transition-colors">803-380-8893</a></li>
+                <li>Admin: <a href="tel:864-523-5353" className="hover:text-primary transition-colors">864-523-5353</a></li>
+                <li>Serving Aiken County & SC Statewide</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 pt-8 text-center text-sm text-background/70">
-            <p>&copy; 2026 Syndica Concierge Care. All rights reserved. | Andrew Bridges, NP</p>
+          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+            <p>&copy; 2026 Syndica Concierge Care. All rights reserved. | Licensed in South Carolina</p>
           </div>
         </div>
       </footer>
