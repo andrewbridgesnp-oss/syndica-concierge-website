@@ -158,7 +158,7 @@ export default function Home() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/bBHWoJXPVzgIFYfh.mp4" type="video/mp4" />
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/zBGpCfrbUIhNlpum.mp4" type="video/mp4" />
                 </video>
               </div>
               <h3 className="text-2xl mb-4">Telehealth</h3>
@@ -218,7 +218,7 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZCfYqRCNYlGZLbON.png"
+                  src="https://private-us-east-1.manuscdn.com/sessionFile/dm175CICJyCKctu3wiRCk9/sandbox/Reo3OuBW3Vt6ssIDFcjb2G-img-1_1770733128000_na1fn_c2VydmljZS13ZWlnaHQtbG9zcy1zaG9wcGluZw.jpg?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvZG0xNzVDSUNKeUNLY3R1M3dpUkNrOS9zYW5kYm94L1JlbzNPdUJXM1Z0NnNzSURGY2piMkctaW1nLTFfMTc3MDczMzEyODAwMF9uYTFmbl9jMlZ5ZG1salpTMTNaV2xuYUhRdGJHOXpjeTF6YUc5d2NHbHVady5qcGc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=e6V-s65GkgXev5EotR0i8Ld9OQkS6SZYcWvFZm9O3weHSPs7D35uyfwNf5sod8oODCJDU11uftDPxURwLe678vWxFw6ZK20e3jPHYTNHrMGiHP1wJKFpuurlYVsaivQ3GKHQWyohg5ayfb1goJKpOZFhCYlJBhyIDHiLcfNqVzGFM-OBEusNXeH9QV48ifHVbScSYMNAb6OKCWF5Ws4ke~n7AFdYLlHjeKaUYEhKyxiehoBYgc0URIUDRvStRGtGfLPKJZdRpNwdNQgWrsf0Nb4NojMrom4HJJ04lq6~-ce5D0j7dswvcJyb~M6P8b7SVi~NNigkSQMibhQ5k8vHqQ__"
                   alt="Weight Loss Success"
                   className="w-full h-full object-cover"
                 />
@@ -247,7 +247,7 @@ export default function Home() {
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
                 <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfJqKkJnqYOtTkRk.png"
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfpOdaRXuPlbmeiX.jpg"
                   alt="Men's Health Consultation"
                   className="w-full h-full object-cover"
                 />
@@ -275,11 +275,15 @@ export default function Home() {
             {/* Concierge Home Visits */}
             <Card className="luxury-card group overflow-hidden">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lqCTNXTqKVsZRWzk.png"
-                  alt="Concierge Home Visit"
+                <video 
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
-                />
+                >
+                  <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/KADuTeMxltymTloI.mp4" type="video/mp4" />
+                </video>
               </div>
               <h3 className="text-2xl mb-4">Concierge Home Visits</h3>
               <p className="text-muted-foreground mb-6">
