@@ -116,8 +116,15 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Resting Bliss Face - Signature Service */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Full-face rejuvenation treatment combining neuromodulators and dermal fillers for a naturally serene, youthful appearance. Results last 3-6 months.</p>
+                  </div>
+                </div>
                 <video 
                   autoPlay
                   loop
@@ -149,8 +156,15 @@ export default function Home() {
             </Card>
 
             {/* Telehealth */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Secure HIPAA-compliant video consultations from anywhere. Same-day appointments available. Perfect for follow-ups, prescription refills, and non-emergency care.</p>
+                  </div>
+                </div>
                 <video 
                   autoPlay
                   loop
@@ -186,8 +200,15 @@ export default function Home() {
             </Card>
 
             {/* Injections & Procedures */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Therapeutic injections for joint pain, trigger points, and musculoskeletal conditions. Fast relief without specialist wait times or referrals.</p>
+                  </div>
+                </div>
                 <img 
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/vyfaqFIbFdyHKwPv.png"
                   alt="Professional Aesthetic Injection Treatment"
@@ -215,8 +236,15 @@ export default function Home() {
             </Card>
 
             {/* Weight Loss */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Medically supervised weight loss using FDA-approved GLP-1 medications (Semaglutide/Tirzepatide). Personalized plans with ongoing monitoring and support.</p>
+                  </div>
+                </div>
                 <img 
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZCfYqRCNYlGZLbON.png"
                   alt="Weight Loss Success"
@@ -244,8 +272,15 @@ export default function Home() {
             </Card>
 
             {/* Men's Health */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Confidential treatment for erectile dysfunction, low testosterone, and men's wellness. Discreet consultations with personalized treatment plans.</p>
+                  </div>
+                </div>
                 <img 
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/DfJqKkJnqYOtTkRk.png"
                   alt="Men's Health Consultation"
@@ -273,8 +308,15 @@ export default function Home() {
             </Card>
 
             {/* Concierge Home Visits */}
-            <Card className="luxury-card group overflow-hidden">
+            <Card className="luxury-card group overflow-hidden relative">
               <div className="relative h-48 mb-6 -mx-6 -mt-6">
+                {/* Hover Summary Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/80 to-black/60 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10 flex items-center justify-center p-6">
+                  <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h4 className="text-xl font-bold mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Quick Summary</h4>
+                    <p className="text-sm leading-relaxed">Premium healthcare delivered to your home. Perfect for aesthetic parties (3+ guests), private consultations, or when you prefer ultimate convenience.</p>
+                  </div>
+                </div>
                 <img 
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/lqCTNXTqKVsZRWzk.png"
                   alt="Concierge Home Visit"
