@@ -88,14 +88,11 @@ export default function Home() {
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg">
                   Book Appointment
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 font-semibold px-8 py-6 text-lg">
-                  Learn More
-                </Button>
               </div>
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-luxury">
               <img 
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663234880535/ZKyuljnoIzgtsKTN.crdownload" 
                 alt="Modern medical facility"
                 className="w-full h-full object-cover"
               />
