@@ -69,6 +69,41 @@ function writeToLogFile(source: LogSource, entries: unknown[]) {
 }
 
 /**
+ * Vite plugin to conditionally inject analytics script
+ * Only includes Umami analytics when environment variables are defined
+ */
+function vitePluginAnalytics(): Plugin {
+  return {
+    name: "conditional-analytics",
+
+    transformIndexHtml() {
+      const endpoint = process.env.VITE_ANALYTICS_ENDPOINT;
+      const websiteId = process.env.VITE_ANALYTICS_WEBSITE_ID;
+
+      // Only inject analytics script if both environment variables are defined
+      if (endpoint && websiteId) {
+        return {
+          tags: [
+            {
+              tag: "script",
+              attrs: {
+                defer: true,
+                src: `${endpoint}/umami`,
+                "data-website-id": websiteId,
+              },
+              injectTo: "body-prepend",
+            },
+          ],
+        };
+      }
+
+      // No tags to inject if environment variables are not set
+      return undefined;
+    },
+  };
+}
+
+/**
  * Vite plugin to collect browser debug logs
  * - POST /__manus__/logs: Browser sends logs, written directly to files
  * - Files: browserConsole.log, networkRequests.log, sessionReplay.log
@@ -150,7 +185,7 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginAnalytics(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
   plugins,
